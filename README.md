@@ -1,5 +1,5 @@
 # 💫 About Me:
-👋 Hi, I'm Karan Anand! I'm a **Computer Science & Math student at the University of British Columbia, who loves exploring the intersection of math and computing, from algorithms to AI. Always open to cool ideas and collaborations—let’s connect! 🚀
+👋 Hi, I'm Karan Anand! I'm a Computer Science & Math student at the University of British Columbia, who loves exploring the intersection of math and computing, from algorithms to AI. Always open to cool ideas and collaborations—let’s connect! 🚀
 
 
 ## 🌐 Socials:
