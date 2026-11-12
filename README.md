@@ -6,29 +6,11 @@
   <img src="assets/hero.svg" width="100%" alt="A pixel portrait of Karan Anand beside his name in a pixel typeface, two lines reading 'numerical kernels for stdlib. tools that get people into open source.', and a tilted passport-style stamp: 'merged. 580 pull requests into stdlib, dec 2024 to date'.">
 </picture>
 
-<a href="https://gitintogsoc.me/start/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-git-into-gsoc-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/plate-git-into-gsoc-light.svg">
-  <img src="assets/plate-git-into-gsoc.svg" width="100%" alt="The top of gitintogsoc.me in a pixel frame: the headline 'where would you fit?' in the same pixel typeface, and a paragraph explaining that the four questions run in your browser.">
-</picture>
-</a>
+<p><a href="https://gitintogsoc.me/start/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/plate-git-into-gsoc-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/plate-git-into-gsoc-light.svg"><img src="assets/plate-git-into-gsoc.svg" width="100%" alt="The top of gitintogsoc.me in a pixel frame: the headline 'where would you fit?' in the same pixel typeface, and a paragraph explaining that the four questions run in your browser."></picture></a></p>
 
 **git into gsoc** asks four questions and names the Google Summer of Code organizations that fit, with the evidence: the official list, each ideas page, and whether a repository has merged newcomers' pull requests lately. In the browser, in the terminal, or from your AI assistant. [Site](https://gitintogsoc.me/start/), [code](https://github.com/anandkaranubc/git-into-gsoc).
 
-<a href="https://anandkaranubc.github.io/gitgoblin/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-gitgoblin-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/plate-gitgoblin-light.svg">
-  <img src="assets/plate-gitgoblin.svg" width="49.4%" align="top" alt="The gitgoblin website in a pixel frame: the headline 'digs up forgotten work. ships it.' beside the edge of a terminal; the goblin peeks over the top of the frame.">
-</picture>
-</a> <a href="https://longhand-sand.vercel.app">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-longhand-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/plate-longhand-light.svg">
-  <img src="assets/plate-longhand.svg" width="49.4%" align="top" alt="The Longhand website in a pixel frame: 'Practise MATH 100 on paper. Check it here.' with two buttons, Start practising and Try a mock midterm.">
-</picture>
-</a>
+<p><a href="https://anandkaranubc.github.io/gitgoblin/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/plate-gitgoblin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/plate-gitgoblin-light.svg"><img src="assets/plate-gitgoblin.svg" width="49.4%" align="top" alt="The gitgoblin website in a pixel frame: the headline 'digs up forgotten work. ships it.' beside the edge of a terminal; the goblin peeks over the top of the frame."></picture></a> <a href="https://longhand-sand.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/plate-longhand-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/plate-longhand-light.svg"><img src="assets/plate-longhand.svg" width="49.4%" align="top" alt="The Longhand website in a pixel frame: 'Practise MATH 100 on paper. Check it here.' with two buttons, Start practising and Try a mock midterm."></picture></a></p>
 
 **gitgoblin** reads a repository the way a careful new maintainer would and finds the work it needs: unclaimed issues, CI about to break, docs that contradict the code. Its agent runs the project's own tests and gets an independent review before you decide whether to open the pull request. [Site](https://anandkaranubc.github.io/gitgoblin/), [code](https://github.com/anandkaranubc/gitgoblin). **longhand** sets first-year calculus in course order, by the test each topic comes before, with mock papers laid out like the real ones and the reasoning written out. [Site](https://longhand-sand.vercel.app).
 
