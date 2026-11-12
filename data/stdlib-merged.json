@@ -1,0 +1,3482 @@
+[
+  {
+    "c": "2024-12-25T20:04:39Z",
+    "m": "2025-01-15T03:15:40Z",
+    "n": 4236,
+    "t": "feat(stats): add C implementation for `stats/base/dists/arcsine/mode`"
+  },
+  {
+    "c": "2024-12-25T23:33:32Z",
+    "m": "2025-01-15T14:00:45Z",
+    "n": 4241,
+    "t": "feat(stats): add C Implementation for `stats/base/dists/arcsine/stdev`"
+  },
+  {
+    "c": "2024-12-29T23:53:40Z",
+    "m": "2025-01-15T03:15:15Z",
+    "n": 4361,
+    "t": "feat(stats): add C implementation for `stats/base/dists/arcsine/skewness`"
+  },
+  {
+    "c": "2024-12-30T05:15:03Z",
+    "m": "2025-02-09T03:09:30Z",
+    "n": 4369,
+    "t": "feat(stats): add C implementation for `stats/base/dists/arcsine/mean`"
+  },
+  {
+    "c": "2025-01-05T09:51:15Z",
+    "m": "2025-04-02T02:04:52Z",
+    "n": 4557,
+    "t": "feat(stats): add C implementation for `stats/base/dists/hypergeometric/variance`"
+  },
+  {
+    "c": "2025-01-05T10:41:55Z",
+    "m": "2025-03-01T15:12:49Z",
+    "n": 4559,
+    "t": "feat(stats): add C implementation for `stats/base/dists/hypergeometric/stdev`"
+  },
+  {
+    "c": "2025-01-05T11:10:36Z",
+    "m": "2025-03-01T15:12:06Z",
+    "n": 4560,
+    "t": "feat(stats): add C implementation for `stats/base/dists/hypergeometric/skewness`"
+  },
+  {
+    "c": "2025-01-05T12:38:20Z",
+    "m": "2025-03-02T01:27:13Z",
+    "n": 4565,
+    "t": "feat(stats): add C implementation for `stats/base/dists/hypergeometric/pmf`"
+  },
+  {
+    "c": "2025-01-05T17:50:10Z",
+    "m": "2025-03-02T01:33:29Z",
+    "n": 4575,
+    "t": "feat(stats): add C implementation for `stats/base/dists/hypergeometric/logpmf`"
+  },
+  {
+    "c": "2025-01-05T19:04:55Z",
+    "m": "2025-01-18T01:04:01Z",
+    "n": 4579,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/median`"
+  },
+  {
+    "c": "2025-01-05T19:17:23Z",
+    "m": "2025-01-10T14:18:01Z",
+    "n": 4580,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/mode`"
+  },
+  {
+    "c": "2025-01-05T19:34:59Z",
+    "m": "2025-01-18T02:38:39Z",
+    "n": 4582,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/mgf`"
+  },
+  {
+    "c": "2025-01-05T20:15:00Z",
+    "m": "2025-01-18T02:36:47Z",
+    "n": 4584,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/logpmf`"
+  },
+  {
+    "c": "2025-01-05T20:30:26Z",
+    "m": "2025-01-18T01:11:30Z",
+    "n": 4585,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/pdf`"
+  },
+  {
+    "c": "2025-01-05T21:03:05Z",
+    "m": "2025-01-18T01:08:02Z",
+    "n": 4586,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/pmf`"
+  },
+  {
+    "c": "2025-01-05T21:28:17Z",
+    "m": "2025-01-16T14:02:15Z",
+    "n": 4587,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/quantile`"
+  },
+  {
+    "c": "2025-01-05T22:19:05Z",
+    "m": "2025-01-11T01:27:08Z",
+    "n": 4588,
+    "t": "feat(stats): add C implementation for `stats/base/dists/degenerate/stdev`"
+  },
+  {
+    "c": "2025-01-05T22:46:40Z",
+    "m": "2025-02-09T03:10:03Z",
+    "n": 4589,
+    "t": "feat(stats): add C implementation for `stats/base/dists/chi/entropy`"
+  },
+  {
+    "c": "2025-01-05T23:42:44Z",
+    "m": "2025-05-03T14:34:38Z",
+    "n": 4590,
+    "t": "feat(stats): add C implementation for `stats/base/dists/chi/stdev`"
+  },
+  {
+    "c": "2025-01-05T23:59:21Z",
+    "m": "2025-05-03T14:16:11Z",
+    "n": 4591,
+    "t": "feat(stats): add C implementation for `stats/base/dists/chi/variance`"
+  },
+  {
+    "c": "2025-01-06T00:25:58Z",
+    "m": "2025-02-09T03:13:34Z",
+    "n": 4592,
+    "t": "feat(stats): add C implementation for `stats/base/dists/chisquare/kurtosis`"
+  },
+  {
+    "c": "2025-01-06T00:43:01Z",
+    "m": "2025-01-08T13:02:46Z",
+    "n": 4593,
+    "t": "feat(stats): add C implementation for `stats/base/dists/chisquare/mgf`"
+  },
+  {
+    "c": "2025-01-14T05:44:16Z",
+    "m": "2025-01-14T10:41:15Z",
+    "n": 4744,
+    "t": "bench: refactor random number generation in `stats/base/dists/arcsine`"
+  },
+  {
+    "c": "2025-01-15T18:20:27Z",
+    "m": "2025-03-06T02:18:02Z",
+    "n": 4768,
+    "t": "refactor: update `stats/base/dists/triangular/mgf` implementation and test tolerances"
+  },
+  {
+    "c": "2025-01-16T03:22:29Z",
+    "m": "2025-04-30T01:19:15Z",
+    "n": 4771,
+    "t": "feat(stats): add C implementation for `stats/base/dists/negative-binomial/mgf`"
+  },
+  {
+    "c": "2025-01-16T15:51:33Z",
+    "m": "2025-01-18T07:48:56Z",
+    "n": 4775,
+    "t": "bench: refactor random number generation in `stats/base/dists/bernoulli`"
+  },
+  {
+    "c": "2025-01-18T08:16:25Z",
+    "m": "2025-01-18T09:45:57Z",
+    "n": 4798,
+    "t": "bench: refactor random number generation in `stats/base/dists/arcsine`"
+  },
+  {
+    "c": "2025-01-21T16:38:56Z",
+    "m": "2025-01-21T20:26:41Z",
+    "n": 4837,
+    "t": "bench: refactor random number generation in `stats/base/dists/beta`"
+  },
+  {
+    "c": "2025-01-21T21:08:41Z",
+    "m": "2025-01-21T23:40:43Z",
+    "n": 4840,
+    "t": "bench: refactor random number generation in `stats/base/dists/betaprime`"
+  },
+  {
+    "c": "2025-01-21T22:00:19Z",
+    "m": "2025-01-21T23:37:09Z",
+    "n": 4841,
+    "t": "bench: refactor random number generation in `stats/base/dists/binomial`"
+  },
+  {
+    "c": "2025-01-22T18:51:22Z",
+    "m": "2025-01-22T21:58:28Z",
+    "n": 4850,
+    "t": "bench: refactor random number generation in `stats/base/dists/cauchy`"
+  },
+  {
+    "c": "2025-01-22T23:04:13Z",
+    "m": "2025-01-23T00:42:03Z",
+    "n": 4853,
+    "t": "bench: refactor random number generation in `stats/base/dists/chi`"
+  },
+  {
+    "c": "2025-01-23T00:33:55Z",
+    "m": "2025-01-23T00:58:48Z",
+    "n": 4855,
+    "t": "feat: add `III_D` macro in `math/base/napi/ternary`"
+  },
+  {
+    "c": "2025-01-23T05:07:53Z",
+    "m": "2025-01-26T10:58:01Z",
+    "n": 4860,
+    "t": "bench: refactor random number generation in `stats/base/dists/chisquare`"
+  },
+  {
+    "c": "2025-01-23T05:36:22Z",
+    "m": "2025-01-26T10:53:55Z",
+    "n": 4861,
+    "t": "bench: refactor random number generation in `stats/base/dists/cosine`"
+  },
+  {
+    "c": "2025-01-23T06:20:26Z",
+    "m": "2025-01-26T10:46:19Z",
+    "n": 4862,
+    "t": "bench: refactor random number generation in `stats/base/dists/degenerate`"
+  },
+  {
+    "c": "2025-01-25T02:16:59Z",
+    "m": "2025-01-26T10:34:14Z",
+    "n": 4887,
+    "t": "bench: refactor random number generation in `stats/base/dists/discrete-uniform`"
+  },
+  {
+    "c": "2025-01-26T19:04:50Z",
+    "m": "2025-01-26T22:25:36Z",
+    "n": 4915,
+    "t": "docs: fix use of weight parameter in example"
+  },
+  {
+    "c": "2025-01-26T19:56:31Z",
+    "m": "2025-01-26T23:02:44Z",
+    "n": 4916,
+    "t": "bench: refactor random number generation in `stats/base/dists/erlang`"
+  },
+  {
+    "c": "2025-01-26T20:19:24Z",
+    "m": "2025-01-26T22:58:49Z",
+    "n": 4917,
+    "t": "bench: refactor random number generation in `stats/base/dists/exponential`"
+  },
+  {
+    "c": "2025-01-27T06:31:42Z",
+    "m": "2025-02-08T09:54:20Z",
+    "n": 4921,
+    "t": "bench: refactor random number generation in `stats/base/dists/f`"
+  },
+  {
+    "c": "2025-01-27T08:00:38Z",
+    "m": "2025-02-08T10:01:54Z",
+    "n": 4922,
+    "t": "bench: refactor random number generation in `stats/base/dists/frechet`"
+  },
+  {
+    "c": "2025-01-27T15:41:49Z",
+    "m": "2025-02-09T18:12:45Z",
+    "n": 4929,
+    "t": "bench: refactor random number generation in `stats/base/dists/gamma`"
+  },
+  {
+    "c": "2025-01-27T18:51:14Z",
+    "m": "2025-02-08T10:10:19Z",
+    "n": 4931,
+    "t": "bench: refactor random number generation in `stats/base/dists/geometric`"
+  },
+  {
+    "c": "2025-01-28T02:03:02Z",
+    "m": "2025-02-08T10:05:44Z",
+    "n": 4933,
+    "t": "bench: refactor random number generation in `stats/base/dists/gumbel`"
+  },
+  {
+    "c": "2025-01-29T18:56:06Z",
+    "m": "2025-01-30T02:45:36Z",
+    "n": 4955,
+    "t": "bench: refactor random number generation in `stats/base/dists/hypergeometric`"
+  },
+  {
+    "c": "2025-01-31T05:33:16Z",
+    "m": "2025-02-17T16:27:19Z",
+    "n": 4972,
+    "t": "bench: refactor benchmarks and update test messages in `math/base/special/abs2`"
+  },
+  {
+    "c": "2025-01-31T08:20:58Z",
+    "m": "2025-02-01T11:52:18Z",
+    "n": 4974,
+    "t": "bench: refactor random number generation in `stats/base/dists/invgamma`"
+  },
+  {
+    "c": "2025-02-09T18:43:54Z",
+    "m": "2025-02-18T09:56:53Z",
+    "n": 5140,
+    "t": "feat: add `math/base/special/hyp2f1`"
+  },
+  {
+    "c": "2025-02-17T05:05:19Z",
+    "m": "2025-02-17T14:53:25Z",
+    "n": 5258,
+    "t": "bench: refactor benchmarks and update test messages in `math/base/special/abs2f`"
+  },
+  {
+    "c": "2025-02-17T05:18:15Z",
+    "m": "2025-02-17T14:53:50Z",
+    "n": 5259,
+    "t": "bench: refactor benchmarks and update test messages in `math/base/special/absf`"
+  },
+  {
+    "c": "2025-02-17T19:22:01Z",
+    "m": "2025-02-18T07:39:33Z",
+    "n": 5267,
+    "t": "bench: refactor benchmarks and update test messages in `math/base/special/acos`"
+  },
+  {
+    "c": "2025-02-17T19:28:50Z",
+    "m": "2025-02-18T07:37:55Z",
+    "n": 5268,
+    "t": "bench: refactor benchmarks and update test messages in `math/base/special/acosd`"
+  },
+  {
+    "c": "2025-02-17T19:44:42Z",
+    "m": "2025-02-18T07:41:29Z",
+    "n": 5269,
+    "t": "bench: refactor benchmarks in `math/base/special/acosf`"
+  },
+  {
+    "c": "2025-02-17T22:58:21Z",
+    "m": "2025-02-22T03:05:33Z",
+    "n": 5271,
+    "t": "feat: add `stats/base/dists/bradford/mean`"
+  },
+  {
+    "c": "2025-02-18T00:27:49Z",
+    "m": "2025-02-21T01:35:25Z",
+    "n": 5275,
+    "t": "feat: add `stats/base/dists/bradford/median`"
+  },
+  {
+    "c": "2025-02-18T05:21:10Z",
+    "m": "2025-03-08T02:00:49Z",
+    "n": 5280,
+    "t": "feat: add `stats/base/dists/bradford/pdf`"
+  },
+  {
+    "c": "2025-02-18T06:38:31Z",
+    "m": "2025-02-22T03:07:17Z",
+    "n": 5282,
+    "t": "feat: add `stats/base/dists/bradford/cdf`"
+  },
+  {
+    "c": "2025-02-18T20:10:30Z",
+    "m": "2025-03-05T03:34:13Z",
+    "n": 5295,
+    "t": "feat: add `stats/base/dists/bradford/quantile`"
+  },
+  {
+    "c": "2025-02-18T20:31:12Z",
+    "m": "2025-02-20T00:15:04Z",
+    "n": 5296,
+    "t": "bench: fix `isnan` checks in `stats/base/dists`"
+  },
+  {
+    "c": "2025-02-19T11:36:24Z",
+    "m": "2025-02-21T01:43:28Z",
+    "n": 5315,
+    "t": "feat: add `stats/base/dists/bradford/mode`"
+  },
+  {
+    "c": "2025-02-19T14:29:46Z",
+    "m": "2025-02-20T00:10:58Z",
+    "n": 5318,
+    "t": "refactor: update benchmarks and tests in `math/base/special/acosh`"
+  },
+  {
+    "c": "2025-02-19T21:26:52Z",
+    "m": "2025-02-22T03:10:26Z",
+    "n": 5324,
+    "t": "feat: add `stats/base/dists/bradford/entropy`"
+  },
+  {
+    "c": "2025-02-20T01:04:39Z",
+    "m": "2025-02-22T03:04:14Z",
+    "n": 5326,
+    "t": "feat: add `stats/base/dists/bradford/variance`"
+  },
+  {
+    "c": "2025-02-20T04:15:06Z",
+    "m": "2025-02-22T03:06:21Z",
+    "n": 5333,
+    "t": "feat: add `stats/base/dists/bradford/stdev`"
+  },
+  {
+    "c": "2025-02-20T06:08:34Z",
+    "m": "2025-02-20T11:33:02Z",
+    "n": 5336,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-20T06:14:39Z",
+    "m": "2025-02-20T11:31:09Z",
+    "n": 5337,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-20T06:22:59Z",
+    "m": "2025-02-20T11:29:33Z",
+    "n": 5338,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-20T06:31:28Z",
+    "m": "2025-02-20T11:28:03Z",
+    "n": 5339,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-20T06:35:54Z",
+    "m": "2025-02-20T11:25:28Z",
+    "n": 5340,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-20T06:42:22Z",
+    "m": "2025-02-20T11:34:04Z",
+    "n": 5341,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-21T01:20:27Z",
+    "m": "2025-02-21T06:25:17Z",
+    "n": 5348,
+    "t": "feat: add C implementation for `math/base/special/hyp2f1`"
+  },
+  {
+    "c": "2025-02-22T06:41:21Z",
+    "m": "2025-02-22T11:50:34Z",
+    "n": 5367,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-22T07:05:35Z",
+    "m": "2025-02-22T11:52:59Z",
+    "n": 5369,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-23T06:20:32Z",
+    "m": "2025-02-23T10:28:32Z",
+    "n": 5390,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-24T04:43:18Z",
+    "m": "2025-02-25T00:57:01Z",
+    "n": 5404,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-25T02:28:49Z",
+    "m": "2025-03-05T13:45:08Z",
+    "n": 5435,
+    "t": "feat: add `math/base/special/sind`"
+  },
+  {
+    "c": "2025-02-26T23:37:51Z",
+    "m": "2025-02-27T08:53:58Z",
+    "n": 5466,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-27T00:02:06Z",
+    "m": "2025-02-27T08:56:15Z",
+    "n": 5467,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-27T00:33:41Z",
+    "m": "2025-03-01T01:50:50Z",
+    "n": 5471,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-02-27T01:27:56Z",
+    "m": "2025-02-27T08:48:34Z",
+    "n": 5472,
+    "t": "fix: add missing `native.js` to `math/base/special/tribonacci`"
+  },
+  {
+    "c": "2025-02-27T02:11:47Z",
+    "m": "2025-03-04T02:44:14Z",
+    "n": 5473,
+    "t": "fix: update `math/base/special/cosd` to match correct reference implementation"
+  },
+  {
+    "c": "2025-02-27T02:33:01Z",
+    "m": "2025-02-27T06:59:36Z",
+    "n": 5488,
+    "t": "fix: escape % symbol when processing LaTeX equations in `remark-img-equations` plugin"
+  },
+  {
+    "c": "2025-03-01T01:37:10Z",
+    "m": "2025-03-01T01:47:41Z",
+    "n": 5528,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-03-01T05:00:04Z",
+    "m": "2025-03-01T06:16:06Z",
+    "n": 5540,
+    "t": "refactor: move implementations and macros to separate files"
+  },
+  {
+    "c": "2025-03-01T05:25:16Z",
+    "m": "2025-03-01T06:41:45Z",
+    "n": 5541,
+    "t": "refactor: move implementations and macros to separate files"
+  },
+  {
+    "c": "2025-03-01T06:23:56Z",
+    "m": "2025-03-01T07:07:52Z",
+    "n": 5544,
+    "t": "refactor: move implementations and macros to separate files"
+  },
+  {
+    "c": "2025-03-01T06:53:19Z",
+    "m": "2025-03-01T07:08:17Z",
+    "n": 5545,
+    "t": "feat: add `DIII_D` macro in `math/base/napi/quaternary`"
+  },
+  {
+    "c": "2025-03-01T07:12:26Z",
+    "m": "2025-03-01T07:29:41Z",
+    "n": 5546,
+    "t": "docs: fix typo by replacing `int_32` with `int32_t`"
+  },
+  {
+    "c": "2025-03-01T18:40:00Z",
+    "m": "2025-03-01T21:09:09Z",
+    "n": 5636,
+    "t": "test: add tests to achieve 100% code coverage"
+  },
+  {
+    "c": "2025-03-01T19:01:28Z",
+    "m": "2025-03-01T21:08:43Z",
+    "n": 5638,
+    "t": "test: add tests to achieve 100% code coverage"
+  },
+  {
+    "c": "2025-03-01T20:43:27Z",
+    "m": "2025-03-01T22:37:30Z",
+    "n": 5693,
+    "t": "test: add tests to achieve 100% code coverage"
+  },
+  {
+    "c": "2025-03-03T07:13:20Z",
+    "m": "2025-03-27T09:29:22Z",
+    "n": 5753,
+    "t": "docs: add a contributing Git cheatsheet document"
+  },
+  {
+    "c": "2025-03-04T21:39:24Z",
+    "m": "2025-03-05T02:45:43Z",
+    "n": 5786,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-03-04T21:45:05Z",
+    "m": "2025-03-05T02:11:28Z",
+    "n": 5787,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-03-05T02:49:29Z",
+    "m": "2025-03-05T02:57:22Z",
+    "n": 5794,
+    "t": "test: pass in missing `opts` argument"
+  },
+  {
+    "c": "2025-03-05T17:25:10Z",
+    "m": "2025-03-11T01:54:12Z",
+    "n": 5807,
+    "t": "fix: update `math/base/special/tand` to match correct reference implementation"
+  },
+  {
+    "c": "2025-03-05T18:13:02Z",
+    "m": "2025-03-05T22:39:37Z",
+    "n": 5810,
+    "t": "fix: update `math/base/special/secd` to match correct reference implementation"
+  },
+  {
+    "c": "2025-03-05T18:37:16Z",
+    "m": "2025-03-06T02:09:46Z",
+    "n": 5811,
+    "t": "fix: update `math/base/special/cscd` to match correct reference implementation"
+  },
+  {
+    "c": "2025-03-05T22:48:03Z",
+    "m": "2025-03-07T03:45:18Z",
+    "n": 5813,
+    "t": "fix: update `math/base/special/cotd` to match correct reference implementation"
+  },
+  {
+    "c": "2025-03-07T01:48:19Z",
+    "m": "2025-03-07T22:46:19Z",
+    "n": 5837,
+    "t": "feat: add `math/base/special/sincosd`"
+  },
+  {
+    "c": "2025-03-07T01:59:55Z",
+    "m": "2025-03-07T02:42:52Z",
+    "n": 5838,
+    "t": "bench: replace custom `sincos` function with built-in Julia implementation"
+  },
+  {
+    "c": "2025-03-07T06:30:26Z",
+    "m": "2025-03-07T22:32:14Z",
+    "n": 5845,
+    "t": "chore: remove duplicate keywords"
+  },
+  {
+    "c": "2025-03-07T06:40:48Z",
+    "m": "2025-03-07T22:35:53Z",
+    "n": 5846,
+    "t": "docs: fix example values in `stats/base/dists/bradford/quantile`"
+  },
+  {
+    "c": "2025-03-07T07:51:22Z",
+    "m": "2025-03-10T07:30:13Z",
+    "n": 5847,
+    "t": "test: validate implementation against Julia test fixtures"
+  },
+  {
+    "c": "2025-03-08T01:27:39Z",
+    "m": "2025-03-08T02:01:21Z",
+    "n": 5866,
+    "t": "docs: update function descriptions"
+  },
+  {
+    "c": "2025-03-08T04:42:16Z",
+    "m": "2025-03-08T09:06:32Z",
+    "n": 5872,
+    "t": "test: fix use of `tape.skip`"
+  },
+  {
+    "c": "2025-03-08T06:37:08Z",
+    "m": "2025-03-09T05:41:04Z",
+    "n": 5875,
+    "t": "chore: address commit comments"
+  },
+  {
+    "c": "2025-03-10T01:33:52Z",
+    "m": "2025-07-20T04:43:13Z",
+    "n": 5935,
+    "t": "feat: add `math/base/special/kernel-sincos`"
+  },
+  {
+    "c": "2025-03-10T04:26:51Z",
+    "m": "2025-03-10T07:28:45Z",
+    "n": 5942,
+    "t": "test: validate implementation against Julia test fixtures"
+  },
+  {
+    "c": "2025-03-10T04:39:39Z",
+    "m": "2025-03-10T07:27:09Z",
+    "n": 5944,
+    "t": "test: validate implementation against Julia test fixtures"
+  },
+  {
+    "c": "2025-03-12T04:59:25Z",
+    "m": "2025-03-12T07:49:55Z",
+    "n": 5987,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-03-12T05:21:58Z",
+    "m": "2025-03-12T05:33:31Z",
+    "n": 5988,
+    "t": "chore: update `runner.jl` to follow current project conventions"
+  },
+  {
+    "c": "2025-03-14T05:51:06Z",
+    "m": "2025-03-14T09:27:05Z",
+    "n": 6036,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-03-14T06:10:03Z",
+    "m": "2025-03-14T09:24:44Z",
+    "n": 6037,
+    "t": "bench: update random value generation"
+  },
+  {
+    "c": "2025-03-18T06:30:19Z",
+    "m": "2025-06-03T15:55:06Z",
+    "n": 6142,
+    "t": "feat: add `math/base/special/rempio2f`"
+  },
+  {
+    "c": "2025-03-19T07:31:40Z",
+    "m": "2025-03-21T11:12:29Z",
+    "n": 6182,
+    "t": "docs: replace manual `for` loop in examples"
+  },
+  {
+    "c": "2025-03-21T05:59:07Z",
+    "m": "2025-03-21T09:48:54Z",
+    "n": 6249,
+    "t": "docs: replace manual `for` loop in examples"
+  },
+  {
+    "c": "2025-03-21T07:27:52Z",
+    "m": "2025-03-21T09:49:36Z",
+    "n": 6253,
+    "t": "feat: add `D_F` macro in `math/base/napi/unary`"
+  },
+  {
+    "c": "2025-03-21T09:31:50Z",
+    "m": "2025-04-02T07:33:16Z",
+    "n": 6257,
+    "t": "feat: add `math/base/special/fibonaccif`"
+  },
+  {
+    "c": "2025-03-21T10:05:01Z",
+    "m": "2025-03-21T10:10:19Z",
+    "n": 6259,
+    "t": "docs: fix use of `%d`"
+  },
+  {
+    "c": "2025-03-22T00:30:57Z",
+    "m": "2025-04-02T09:10:26Z",
+    "n": 6273,
+    "t": "feat: add `math/base/special/atan2d`"
+  },
+  {
+    "c": "2025-03-22T04:54:25Z",
+    "m": "2025-03-22T23:04:53Z",
+    "n": 6277,
+    "t": "docs: add examples for `string` and `float` formatting"
+  },
+  {
+    "c": "2025-03-22T07:05:50Z",
+    "m": "2025-03-22T12:48:51Z",
+    "n": 6280,
+    "t": "docs: replace manual `for` loop in examples"
+  },
+  {
+    "c": "2025-03-23T05:58:32Z",
+    "m": "2025-04-11T07:22:33Z",
+    "n": 6320,
+    "t": "feat: add `math/base/special/fibonacci-indexf`"
+  },
+  {
+    "c": "2025-03-23T06:20:10Z",
+    "m": "2025-03-23T08:26:00Z",
+    "n": 6323,
+    "t": "docs: use correct function name"
+  },
+  {
+    "c": "2025-03-23T06:54:13Z",
+    "m": "2025-03-23T08:28:01Z",
+    "n": 6325,
+    "t": "docs: add examples for `string` and `float` formatting"
+  },
+  {
+    "c": "2025-03-25T06:52:09Z",
+    "m": "2025-04-02T06:02:53Z",
+    "n": 6361,
+    "t": "feat: add `math/base/special/csignumf`"
+  },
+  {
+    "c": "2025-03-25T07:01:47Z",
+    "m": "2025-03-25T07:57:36Z",
+    "n": 6362,
+    "t": "docs: fix example values"
+  },
+  {
+    "c": "2025-03-25T07:34:41Z",
+    "m": "2025-03-29T18:17:47Z",
+    "n": 6363,
+    "t": "chore: use `FLOAT64_MAX_SAFE_NTH_DOUBLE_FACTORIAL`"
+  },
+  {
+    "c": "2025-03-25T08:25:22Z",
+    "m": "2025-03-29T18:22:51Z",
+    "n": 6364,
+    "t": "feat: add `constants/float32/max-safe-nth-double-factorial`"
+  },
+  {
+    "c": "2025-03-25T08:48:54Z",
+    "m": "2025-03-25T08:57:24Z",
+    "n": 6365,
+    "t": "chore: replace separate `sin` and `cos` calls with `sincos`"
+  },
+  {
+    "c": "2025-03-25T08:56:40Z",
+    "m": "2025-03-25T10:29:30Z",
+    "n": 6366,
+    "t": "chore: replace `pow` with `stdlib_base_pow`"
+  },
+  {
+    "c": "2025-03-25T09:13:09Z",
+    "m": "2025-03-29T16:37:36Z",
+    "n": 6367,
+    "t": "chore: replace `fmax` with `stdlib_base_max`"
+  },
+  {
+    "c": "2025-03-25T09:36:14Z",
+    "m": "2025-03-25T09:38:52Z",
+    "n": 6368,
+    "t": "refactor: replace `evalpoly` with compiled polyval functions"
+  },
+  {
+    "c": "2025-03-25T09:41:17Z",
+    "m": "2025-03-29T18:12:39Z",
+    "n": 6369,
+    "t": "chore: replace `pow` with `stdlib_base_pow`"
+  },
+  {
+    "c": "2025-03-25T09:47:56Z",
+    "m": "2025-03-29T18:22:03Z",
+    "n": 6370,
+    "t": "chore: use `FLOAT64_MAX_SAFE_NTH_FACTORIAL`"
+  },
+  {
+    "c": "2025-03-25T19:52:13Z",
+    "m": "2025-03-29T18:17:10Z",
+    "n": 6379,
+    "t": "fix: correct `FLOAT64_MAX_SAFE_NTH_DOUBLE_FACTORIAL`"
+  },
+  {
+    "c": "2025-03-26T07:45:00Z",
+    "m": "2025-04-02T09:09:11Z",
+    "n": 6389,
+    "t": "test: add tests for C99 edge cases"
+  },
+  {
+    "c": "2025-03-27T04:15:01Z",
+    "m": "2025-03-28T09:00:51Z",
+    "n": 6409,
+    "t": "chore: remove obsolete accuracy scripts in `acosh`"
+  },
+  {
+    "c": "2025-03-27T04:46:02Z",
+    "m": "2025-03-28T09:08:59Z",
+    "n": 6410,
+    "t": "chore: rename C files to follow current project conventions"
+  },
+  {
+    "c": "2025-03-27T14:16:16Z",
+    "m": "2025-03-27T20:23:34Z",
+    "n": 6412,
+    "t": "style: remove fancy quotes and add shell prompt"
+  },
+  {
+    "c": "2025-03-27T20:41:58Z",
+    "m": "2025-03-29T08:46:04Z",
+    "n": 6415,
+    "t": "docs: add FAQ for unrelated PR changes"
+  },
+  {
+    "c": "2025-03-29T00:32:42Z",
+    "m": "2025-03-29T08:39:42Z",
+    "n": 6434,
+    "t": "bench: fix invalid array indexing"
+  },
+  {
+    "c": "2025-03-29T00:55:24Z",
+    "m": "2025-03-29T08:41:31Z",
+    "n": 6435,
+    "t": "chore: remove obsolete accuracy and precision scripts"
+  },
+  {
+    "c": "2025-03-29T20:28:19Z",
+    "m": "2025-03-29T22:34:51Z",
+    "n": 6442,
+    "t": "docs: remove repeated example input"
+  },
+  {
+    "c": "2025-03-29T20:52:26Z",
+    "m": "2025-03-29T22:37:19Z",
+    "n": 6443,
+    "t": "bench: add C native benchmarks and missing variable declaration"
+  },
+  {
+    "c": "2025-03-29T21:18:05Z",
+    "m": "2025-03-29T22:32:58Z",
+    "n": 6444,
+    "t": "docs: add rationale for using `merge` over `rebase`"
+  },
+  {
+    "c": "2025-03-29T21:39:30Z",
+    "m": "2025-03-29T22:34:03Z",
+    "n": 6445,
+    "t": "fix: move header file from `float64` to `float32` directory"
+  },
+  {
+    "c": "2025-03-31T14:29:21Z",
+    "m": "2025-04-01T08:03:44Z",
+    "n": 6467,
+    "t": "bench: add missing `native.js` and fix variable range"
+  },
+  {
+    "c": "2025-04-01T03:30:14Z",
+    "m": "2025-04-01T04:30:11Z",
+    "n": 6481,
+    "t": "fix: rename internal variable `fcn` to avoid shadowing and lint errors"
+  },
+  {
+    "c": "2025-04-01T07:08:39Z",
+    "m": "2025-04-01T08:02:29Z",
+    "n": 6487,
+    "t": "docs: remove outdated FAQ on shadowed declaration warning"
+  },
+  {
+    "c": "2025-04-02T07:52:02Z",
+    "m": "2025-04-02T07:59:07Z",
+    "n": 6509,
+    "t": "fix: update `hypot` to follow the IEEE 754-2019 standard"
+  },
+  {
+    "c": "2025-04-02T08:30:51Z",
+    "m": "2025-04-02T08:36:12Z",
+    "n": 6511,
+    "t": "fix: update `hypotf` to follow the IEEE 754-2019 standard"
+  },
+  {
+    "c": "2025-04-02T17:40:04Z",
+    "m": "2025-04-02T22:06:47Z",
+    "n": 6519,
+    "t": "test: add tests for C99 edge cases"
+  },
+  {
+    "c": "2025-04-03T21:40:03Z",
+    "m": "2025-04-03T22:28:39Z",
+    "n": 6535,
+    "t": "fix: inconsistent anchor tag links for headings"
+  },
+  {
+    "c": "2025-04-03T21:51:21Z",
+    "m": "2025-04-03T22:27:41Z",
+    "n": 6536,
+    "t": "docs: add FAQ on generating local test coverage report"
+  },
+  {
+    "c": "2025-04-05T03:12:53Z",
+    "m": "2025-04-05T11:40:31Z",
+    "n": 6556,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T03:39:37Z",
+    "m": "2025-04-05T15:00:04Z",
+    "n": 6557,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T04:01:13Z",
+    "m": "2025-04-05T11:42:12Z",
+    "n": 6558,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T04:11:26Z",
+    "m": "2025-04-05T11:32:29Z",
+    "n": 6559,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T04:24:26Z",
+    "m": "2025-04-05T11:30:07Z",
+    "n": 6560,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T04:34:51Z",
+    "m": "2025-04-05T15:00:40Z",
+    "n": 6561,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T05:28:42Z",
+    "m": "2025-04-05T11:28:46Z",
+    "n": 6562,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T07:11:49Z",
+    "m": "2025-04-05T11:27:16Z",
+    "n": 6563,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T07:20:46Z",
+    "m": "2025-04-05T11:25:36Z",
+    "n": 6564,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T18:39:23Z",
+    "m": "2025-04-05T19:28:06Z",
+    "n": 6570,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T18:59:32Z",
+    "m": "2025-04-09T08:06:23Z",
+    "n": 6571,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-05T19:32:01Z",
+    "m": "2025-04-06T00:31:09Z",
+    "n": 6573,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-07T04:56:27Z",
+    "m": "2025-04-09T07:08:46Z",
+    "n": 6592,
+    "t": "fix: update `sind` to follow the IEEE 754-2019 standard"
+  },
+  {
+    "c": "2025-04-07T05:15:15Z",
+    "m": "2025-04-09T07:17:49Z",
+    "n": 6593,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-07T05:30:00Z",
+    "m": "2025-04-09T07:19:26Z",
+    "n": 6594,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-07T05:36:40Z",
+    "m": "2025-04-08T00:19:08Z",
+    "n": 6595,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-07T05:44:25Z",
+    "m": "2025-04-09T04:17:11Z",
+    "n": 6597,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-07T14:38:41Z",
+    "m": "2025-04-07T23:42:55Z",
+    "n": 6599,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-09T06:59:16Z",
+    "m": "2025-04-09T07:33:16Z",
+    "n": 6620,
+    "t": "test: add tests for IEEE 754-2019 compliance"
+  },
+  {
+    "c": "2025-04-16T01:27:47Z",
+    "m": "2025-04-19T01:30:24Z",
+    "n": 6695,
+    "t": "fix: update `format-tokenize` to correctly handle escaped percent signs"
+  },
+  {
+    "c": "2025-04-19T23:51:12Z",
+    "m": "2025-06-01T08:54:22Z",
+    "n": 6736,
+    "t": "feat: add `math/base/special/factorial2f`"
+  },
+  {
+    "c": "2025-05-02T05:19:17Z",
+    "m": "2025-05-03T04:27:53Z",
+    "n": 6903,
+    "t": "chore: add structured package data for `math/base/special/abs2`"
+  },
+  {
+    "c": "2025-05-08T06:52:41Z",
+    "m": "2025-05-08T08:13:42Z",
+    "n": 6957,
+    "t": "fix: disable zero-padding for special values in `string/base/format-interpolate`"
+  },
+  {
+    "c": "2025-05-09T19:46:30Z",
+    "m": "2025-06-12T01:40:15Z",
+    "n": 6965,
+    "t": "feat: add C implementation for `math/base/special/ellipj`"
+  },
+  {
+    "c": "2025-05-11T07:48:01Z",
+    "m": "2025-06-14T03:30:37Z",
+    "n": 6983,
+    "t": "feat: add C implementation for `math/base/special/minmaxabs`"
+  },
+  {
+    "c": "2025-05-14T07:15:14Z",
+    "m": "2025-05-18T00:28:51Z",
+    "n": 7000,
+    "t": "feat: add `math/base/special/binomcoeff`"
+  },
+  {
+    "c": "2025-05-15T03:36:57Z",
+    "m": "2025-06-06T00:21:57Z",
+    "n": 7007,
+    "t": "feat: add `math/base/special/cinvf`"
+  },
+  {
+    "c": "2025-05-17T19:29:46Z",
+    "m": "2025-05-18T00:30:32Z",
+    "n": 7022,
+    "t": "feat: add C implementation for `math/base/special/heavisidef`"
+  },
+  {
+    "c": "2025-05-19T19:57:38Z",
+    "m": "2025-06-13T22:06:23Z",
+    "n": 7039,
+    "t": "feat: add `math/base/special/minmaxf`"
+  },
+  {
+    "c": "2025-05-20T01:48:50Z",
+    "m": "2025-06-14T15:18:11Z",
+    "n": 7043,
+    "t": "feat: add `math/base/special/minmaxabsf`"
+  },
+  {
+    "c": "2025-05-20T06:51:11Z",
+    "m": "2025-06-07T23:03:06Z",
+    "n": 7048,
+    "t": "feat: add `math/base/special/spencef`"
+  },
+  {
+    "c": "2025-05-24T06:48:03Z",
+    "m": "2025-06-01T15:37:30Z",
+    "n": 7081,
+    "t": "feat: add `math/base/special/atan2f`"
+  },
+  {
+    "c": "2025-05-25T21:05:14Z",
+    "m": "2025-06-13T14:11:50Z",
+    "n": 7089,
+    "t": "feat: add `math/base/special/frexpf`"
+  },
+  {
+    "c": "2025-05-26T08:30:57Z",
+    "m": "2025-06-14T03:40:36Z",
+    "n": 7097,
+    "t": "feat: add `math/base/special/gamma-lanczos-sum-expg-scaledf`"
+  },
+  {
+    "c": "2025-05-26T18:56:53Z",
+    "m": "2025-06-14T14:57:58Z",
+    "n": 7101,
+    "t": "feat: add `math/base/special/modff`"
+  },
+  {
+    "c": "2025-06-01T15:57:46Z",
+    "m": "2025-06-11T03:03:45Z",
+    "n": 7158,
+    "t": "feat: add `math/base/special/cphasef`"
+  },
+  {
+    "c": "2025-06-04T00:17:45Z",
+    "m": "2025-06-04T22:42:52Z",
+    "n": 7201,
+    "t": "feat: add `math/base/special/kernel-cosf`"
+  },
+  {
+    "c": "2025-06-06T01:51:07Z",
+    "m": "2025-06-09T23:21:38Z",
+    "n": 7229,
+    "t": "feat: add `math/base/special/sinf`"
+  },
+  {
+    "c": "2025-06-06T04:43:12Z",
+    "m": "2025-06-09T23:25:40Z",
+    "n": 7234,
+    "t": "feat: add `math/base/special/cosf`"
+  },
+  {
+    "c": "2025-06-08T07:00:52Z",
+    "m": "2025-06-10T02:31:20Z",
+    "n": 7263,
+    "t": "feat: add `math/base/special/kernel-tanf`"
+  },
+  {
+    "c": "2025-06-10T06:34:04Z",
+    "m": "2025-06-10T21:27:55Z",
+    "n": 7302,
+    "t": "feat: add `math/base/special/tanf`"
+  },
+  {
+    "c": "2025-06-10T07:12:51Z",
+    "m": "2025-06-11T02:36:59Z",
+    "n": 7303,
+    "t": "feat: add `math/base/special/covercosf`"
+  },
+  {
+    "c": "2025-06-11T03:54:10Z",
+    "m": "2025-06-12T00:29:02Z",
+    "n": 7316,
+    "t": "feat: add `math/base/special/coversinf`"
+  },
+  {
+    "c": "2025-06-13T03:37:22Z",
+    "m": "2025-06-13T14:32:34Z",
+    "n": 7341,
+    "t": "feat: add `math/base/special/cscf`"
+  },
+  {
+    "c": "2025-06-13T03:58:56Z",
+    "m": "2025-07-20T04:13:24Z",
+    "n": 7342,
+    "t": "feat: add `math/base/special/cpolarf`"
+  },
+  {
+    "c": "2025-06-14T17:51:52Z",
+    "m": "2025-06-14T21:24:33Z",
+    "n": 7358,
+    "t": "feat: add `math/base/special/hacovercosf`"
+  },
+  {
+    "c": "2025-06-14T18:15:28Z",
+    "m": "2025-06-14T22:39:34Z",
+    "n": 7360,
+    "t": "feat: add `math/base/special/hacoversinf`"
+  },
+  {
+    "c": "2025-06-16T06:42:58Z",
+    "m": "2025-06-17T14:00:36Z",
+    "n": 7371,
+    "t": "feat: add `math/base/special/cosm1f`"
+  },
+  {
+    "c": "2025-06-16T22:40:46Z",
+    "m": "2025-06-17T01:06:16Z",
+    "n": 7377,
+    "t": "feat: add `math/base/special/havercosf`"
+  },
+  {
+    "c": "2025-06-17T03:21:33Z",
+    "m": "2025-06-17T14:15:14Z",
+    "n": 7381,
+    "t": "feat: add `math/base/special/haversinf`"
+  },
+  {
+    "c": "2025-06-17T19:32:22Z",
+    "m": "2025-06-17T20:40:12Z",
+    "n": 7390,
+    "t": "feat: add `math/base/special/secf`"
+  },
+  {
+    "c": "2025-06-19T07:21:36Z",
+    "m": "2025-06-27T22:24:54Z",
+    "n": 7408,
+    "t": "feat: add C implementation for `math/base/special/gammainc`"
+  },
+  {
+    "c": "2025-06-20T00:38:29Z",
+    "m": "2025-06-20T04:06:25Z",
+    "n": 7418,
+    "t": "feat: add `math/base/special/vercosf`"
+  },
+  {
+    "c": "2025-06-20T00:58:24Z",
+    "m": "2025-06-20T18:40:48Z",
+    "n": 7419,
+    "t": "feat: add `math/base/special/versinf`"
+  },
+  {
+    "c": "2025-06-22T05:54:12Z",
+    "m": "2025-06-22T07:22:40Z",
+    "n": 7446,
+    "t": "feat: add remaining implementation for `number/float64/base/ulp-difference`"
+  },
+  {
+    "c": "2025-06-22T22:37:13Z",
+    "m": "2025-06-26T03:21:36Z",
+    "n": 7451,
+    "t": "feat: add `number/float32/base/ulp-difference`"
+  },
+  {
+    "c": "2025-06-24T01:12:24Z",
+    "m": "2025-06-30T21:38:21Z",
+    "n": 7468,
+    "t": "feat: add `math/base/special/round-nearest-even`"
+  },
+  {
+    "c": "2025-06-24T05:03:41Z",
+    "m": "2025-06-26T03:26:21Z",
+    "n": 7473,
+    "t": "feat: add `number/float64/base/assert/is-almost-equal-value`"
+  },
+  {
+    "c": "2025-06-29T23:41:11Z",
+    "m": "2025-06-30T10:32:15Z",
+    "n": 7517,
+    "t": "feat: add `number/float32/base/assert/is-almost-equal-value`"
+  },
+  {
+    "c": "2025-07-11T06:29:54Z",
+    "m": "2025-07-11T06:48:47Z",
+    "n": 7619,
+    "t": "refactor: update `gammainc` implementation to follow Boost v1.88.0"
+  },
+  {
+    "c": "2025-07-11T08:00:01Z",
+    "m": "2025-07-11T09:42:32Z",
+    "n": 7620,
+    "t": "feat: add `complex/float64/base/assert/is-almost-equal`"
+  },
+  {
+    "c": "2025-07-11T09:45:30Z",
+    "m": "2025-07-11T09:50:40Z",
+    "n": 7622,
+    "t": "feat: add `complex/float32/base/assert/is-almost-equal`"
+  },
+  {
+    "c": "2025-07-14T04:31:29Z",
+    "m": "2025-07-15T05:49:48Z",
+    "n": 7649,
+    "t": "feat: add `assert/is-almost-equal`"
+  },
+  {
+    "c": "2025-07-17T16:31:45Z",
+    "m": "2025-07-20T03:49:19Z",
+    "n": 7682,
+    "t": "feat: add `assert/is-almost-equal-float32array`"
+  },
+  {
+    "c": "2025-07-18T05:12:12Z",
+    "m": "2025-07-20T03:59:14Z",
+    "n": 7687,
+    "t": "feat: add `assert/is-almost-equal-complex128array`"
+  },
+  {
+    "c": "2025-07-18T05:31:10Z",
+    "m": "2025-07-20T03:54:49Z",
+    "n": 7688,
+    "t": "feat: add `assert/is-almost-equal-complex64array`"
+  },
+  {
+    "c": "2025-07-18T06:35:37Z",
+    "m": "2025-07-20T04:06:41Z",
+    "n": 7690,
+    "t": "feat: add `assert/is-almost-equal-array`"
+  },
+  {
+    "c": "2025-07-21T05:30:17Z",
+    "m": "2025-08-06T22:10:20Z",
+    "n": 7707,
+    "t": "feat: add `math/base/special/cotf`"
+  },
+  {
+    "c": "2025-07-22T07:45:44Z",
+    "m": "2025-07-24T21:40:14Z",
+    "n": 7720,
+    "t": "feat: add `math/base/special/sinpif`"
+  },
+  {
+    "c": "2025-07-23T06:41:51Z",
+    "m": "2025-07-24T22:11:17Z",
+    "n": 7726,
+    "t": "feat: add `math/base/special/cospif`"
+  },
+  {
+    "c": "2025-07-25T14:13:52Z",
+    "m": "2025-07-29T01:36:41Z",
+    "n": 7741,
+    "t": "feat: add `math/base/special/sincf`"
+  },
+  {
+    "c": "2025-07-26T20:31:00Z",
+    "m": "2025-08-06T02:46:42Z",
+    "n": 7749,
+    "t": "feat: add `math/base/special/trigammaf`"
+  },
+  {
+    "c": "2025-08-04T05:01:50Z",
+    "m": "2025-08-06T02:33:19Z",
+    "n": 7805,
+    "t": "feat: add `math/base/special/absgammalnf`"
+  },
+  {
+    "c": "2025-08-04T10:51:10Z",
+    "m": "2025-08-11T14:48:09Z",
+    "n": 7806,
+    "t": "feat: add `math/base/special/kernel-sincosf`"
+  },
+  {
+    "c": "2025-08-04T11:45:07Z",
+    "m": "2025-08-06T20:03:38Z",
+    "n": 7808,
+    "t": "feat: add `math/base/special/sindf`"
+  },
+  {
+    "c": "2025-08-04T15:58:00Z",
+    "m": "2025-08-06T01:20:40Z",
+    "n": 7809,
+    "t": "feat: add `math/base/special/cosdf`"
+  },
+  {
+    "c": "2025-08-06T05:12:45Z",
+    "m": "2025-08-07T21:20:58Z",
+    "n": 7817,
+    "t": "feat: add `math/base/special/factoriallnf`"
+  },
+  {
+    "c": "2025-08-08T06:59:33Z",
+    "m": "2025-08-08T21:44:50Z",
+    "n": 7832,
+    "t": "feat: add `math/base/special/tandf`"
+  },
+  {
+    "c": "2025-08-13T19:39:39Z",
+    "m": "2025-08-14T18:28:10Z",
+    "n": 7868,
+    "t": "feat: add `math/base/special/cscdf`"
+  },
+  {
+    "c": "2025-08-13T20:08:24Z",
+    "m": "2025-08-13T23:39:20Z",
+    "n": 7869,
+    "t": "test: use `ulpdiff` for floating-point comparisons"
+  },
+  {
+    "c": "2025-08-13T20:20:50Z",
+    "m": "2025-08-13T23:42:03Z",
+    "n": 7871,
+    "t": "test: use `ulpdiff` for floating-point comparisons"
+  },
+  {
+    "c": "2025-08-16T06:34:27Z",
+    "m": "2025-08-20T00:40:11Z",
+    "n": 7892,
+    "t": "feat: add `math/base/special/sincosf`"
+  },
+  {
+    "c": "2025-08-16T06:53:49Z",
+    "m": "2025-08-16T18:01:38Z",
+    "n": 7893,
+    "t": "feat: add `math/base/special/secdf`"
+  },
+  {
+    "c": "2025-08-16T19:11:38Z",
+    "m": "2025-08-16T23:35:16Z",
+    "n": 7897,
+    "t": "feat: add `math/base/special/cotdf`"
+  },
+  {
+    "c": "2026-04-11T04:10:15Z",
+    "m": "2026-04-11T05:35:45Z",
+    "n": 11359,
+    "t": "bench: refactor to use string interpolation in `stats/strided`"
+  },
+  {
+    "c": "2026-04-11T05:59:38Z",
+    "m": "2026-04-11T06:24:24Z",
+    "n": 11361,
+    "t": "bench: refactor to use string interpolation in `math/strided/ops`"
+  },
+  {
+    "c": "2026-04-11T06:06:32Z",
+    "m": "2026-04-11T07:12:59Z",
+    "n": 11362,
+    "t": "bench: refactor to use string interpolation in `math/strided/special` (batch 1/3)"
+  },
+  {
+    "c": "2026-04-11T06:24:27Z",
+    "m": "2026-04-11T07:14:33Z",
+    "n": 11363,
+    "t": "bench: refactor to use string interpolation in `math/strided/special` (batch 2/3)"
+  },
+  {
+    "c": "2026-04-11T06:26:31Z",
+    "m": "2026-04-11T07:15:14Z",
+    "n": 11364,
+    "t": "bench: refactor to use string interpolation in `math/strided/special` (batch 3/3)"
+  },
+  {
+    "c": "2026-04-11T16:24:43Z",
+    "m": "2026-04-12T22:54:19Z",
+    "n": 11374,
+    "t": "bench: refactor to use string interpolation in `blas/ext/base` (batch 1/7)"
+  },
+  {
+    "c": "2026-04-11T16:25:42Z",
+    "m": "2026-04-12T11:26:24Z",
+    "n": 11375,
+    "t": "bench: refactor to use string interpolation in `blas/ext/base` (batch 2/7)"
+  },
+  {
+    "c": "2026-04-11T16:26:37Z",
+    "m": "2026-04-12T22:42:15Z",
+    "n": 11376,
+    "t": "bench: refactor to use string interpolation in `blas/ext/base` (batch 3/7)"
+  },
+  {
+    "c": "2026-04-11T16:27:17Z",
+    "m": "2026-04-12T11:23:14Z",
+    "n": 11377,
+    "t": "bench: refactor to use string interpolation in `blas/ext/base` (batch 4/7)"
+  },
+  {
+    "c": "2026-04-11T16:28:11Z",
+    "m": "2026-04-12T22:57:31Z",
+    "n": 11378,
+    "t": "bench: refactor to use string interpolation in `blas/ext/base` (batch 5/7)"
+  },
+  {
+    "c": "2026-04-11T16:28:57Z",
+    "m": "2026-04-12T22:50:56Z",
+    "n": 11379,
+    "t": "bench: refactor to use string interpolation in `blas/ext/base` (batch 6/7)"
+  },
+  {
+    "c": "2026-04-11T16:30:08Z",
+    "m": "2026-04-12T23:02:46Z",
+    "n": 11380,
+    "t": "bench: refactor to use string interpolation in `blas/ext/base` (batch 7/7)"
+  },
+  {
+    "c": "2026-04-11T17:25:28Z",
+    "m": "2026-04-12T10:57:41Z",
+    "n": 11381,
+    "t": "bench: refactor to use string interpolation in `math/array`"
+  },
+  {
+    "c": "2026-04-11T17:49:35Z",
+    "m": "2026-04-12T23:17:16Z",
+    "n": 11382,
+    "t": "bench: refactor to use string interpolation in `math/iter`"
+  },
+  {
+    "c": "2026-04-11T20:39:13Z",
+    "m": "2026-04-12T10:13:00Z",
+    "n": 11385,
+    "t": "bench: refactor to use string interpolation in `math/base/assert`"
+  },
+  {
+    "c": "2026-04-11T20:41:22Z",
+    "m": "2026-04-21T02:28:26Z",
+    "n": 11386,
+    "t": "bench: refactor to use string interpolation in `math/base/special` (batch 1/5)"
+  },
+  {
+    "c": "2026-04-11T20:42:12Z",
+    "m": "2026-04-21T02:31:18Z",
+    "n": 11387,
+    "t": "bench: refactor to use string interpolation in `math/base/special` (batch 2/5)"
+  },
+  {
+    "c": "2026-04-11T20:42:52Z",
+    "m": "2026-04-21T00:29:19Z",
+    "n": 11388,
+    "t": "bench: refactor to use string interpolation in `math/base/special` (batch 3/5)"
+  },
+  {
+    "c": "2026-04-11T20:44:02Z",
+    "m": "2026-04-21T02:25:20Z",
+    "n": 11389,
+    "t": "bench: refactor to use string interpolation in `math/base/special` (batch 4/5)"
+  },
+  {
+    "c": "2026-04-11T20:45:04Z",
+    "m": "2026-04-26T22:31:27Z",
+    "n": 11390,
+    "t": "bench: refactor to use string interpolation in `math/base/special` (batch 5/5)"
+  },
+  {
+    "c": "2026-04-12T00:59:57Z",
+    "m": "2026-04-12T10:17:42Z",
+    "n": 11392,
+    "t": "bench: refactor to use string interpolation in `stats/array`"
+  },
+  {
+    "c": "2026-04-12T01:00:50Z",
+    "m": "2026-04-12T10:35:33Z",
+    "n": 11393,
+    "t": "bench: refactor to use string interpolation in `stats/base`"
+  },
+  {
+    "c": "2026-04-12T01:01:41Z",
+    "m": "2026-04-12T10:22:51Z",
+    "n": 11394,
+    "t": "bench: refactor to use string interpolation in `stats/incr`"
+  },
+  {
+    "c": "2026-04-12T01:02:23Z",
+    "m": "2026-04-12T10:15:44Z",
+    "n": 11395,
+    "t": "bench: refactor to use string interpolation in `stats/iter`"
+  },
+  {
+    "c": "2026-04-12T01:03:20Z",
+    "m": "2026-04-12T10:40:18Z",
+    "n": 11396,
+    "t": "bench: refactor to use string interpolation in `@stdlib/stats`"
+  },
+  {
+    "c": "2026-04-12T01:37:14Z",
+    "m": "2026-04-12T10:49:08Z",
+    "n": 11397,
+    "t": "bench: refactor to use string interpolation in `@stdlib/blas`"
+  },
+  {
+    "c": "2026-04-12T02:12:28Z",
+    "m": "2026-04-17T10:25:05Z",
+    "n": 11398,
+    "t": "bench: refactor to use string interpolation in `@stdlib/assert` (batch 1/2)"
+  },
+  {
+    "c": "2026-04-12T02:13:29Z",
+    "m": "2026-04-19T10:11:05Z",
+    "n": 11399,
+    "t": "bench: refactor to use string interpolation in `@stdlib/assert` (batch 2/2)"
+  },
+  {
+    "c": "2026-04-12T19:06:00Z",
+    "m": "2026-04-27T05:56:44Z",
+    "n": 11409,
+    "t": "bench: refactor to use string interpolation in `utils` (batch 1/2)"
+  },
+  {
+    "c": "2026-04-12T19:06:51Z",
+    "m": "2026-05-03T04:51:21Z",
+    "n": 11410,
+    "t": "bench: refactor to use string interpolation in `utils` (batch 2/2)"
+  },
+  {
+    "c": "2026-04-12T19:08:49Z",
+    "m": "2026-05-20T20:03:02Z",
+    "n": 11411,
+    "t": "bench: refactor to use string interpolation in `array`"
+  },
+  {
+    "c": "2026-04-12T19:10:52Z",
+    "m": "2026-04-14T10:09:50Z",
+    "n": 11412,
+    "t": "bench: refactor to use string interpolation in `@stdlib/array` (batch 2/4)"
+  },
+  {
+    "c": "2026-04-12T19:11:38Z",
+    "m": "2026-04-21T00:23:17Z",
+    "n": 11413,
+    "t": "bench: refactor to use string interpolation in `array` (batch 3/4)"
+  },
+  {
+    "c": "2026-04-12T19:12:46Z",
+    "m": "2026-05-18T11:43:41Z",
+    "n": 11414,
+    "t": "bench: refactor to use string interpolation in `array`"
+  },
+  {
+    "c": "2026-04-12T19:14:23Z",
+    "m": "2026-04-12T23:28:46Z",
+    "n": 11415,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random/array` (batch 1/3)"
+  },
+  {
+    "c": "2026-04-12T19:14:57Z",
+    "m": "2026-04-12T22:35:24Z",
+    "n": 11416,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random/array` (batch 2/3)"
+  },
+  {
+    "c": "2026-04-12T19:15:40Z",
+    "m": "2026-04-12T23:32:49Z",
+    "n": 11417,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random/array` (batch 3/3)"
+  },
+  {
+    "c": "2026-04-13T05:14:31Z",
+    "m": "2026-04-13T22:55:56Z",
+    "n": 11422,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random/streams`"
+  },
+  {
+    "c": "2026-04-13T05:15:18Z",
+    "m": "2026-04-26T22:37:40Z",
+    "n": 11423,
+    "t": "bench: refactor to use string interpolation in `random/base`"
+  },
+  {
+    "c": "2026-04-13T05:16:00Z",
+    "m": "2026-04-13T23:04:02Z",
+    "n": 11424,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random/iter`"
+  },
+  {
+    "c": "2026-04-13T05:16:50Z",
+    "m": "2026-04-13T22:59:08Z",
+    "n": 11425,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random/strided` (batch 1/2)"
+  },
+  {
+    "c": "2026-04-13T05:17:28Z",
+    "m": "2026-04-13T23:02:16Z",
+    "n": 11426,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random/strided` (batch 2/2)"
+  },
+  {
+    "c": "2026-04-13T05:18:20Z",
+    "m": "2026-04-19T07:05:02Z",
+    "n": 11427,
+    "t": "bench: refactor to use string interpolation in `@stdlib/random`"
+  },
+  {
+    "c": "2026-04-13T06:43:25Z",
+    "m": "2026-04-13T23:13:53Z",
+    "n": 11429,
+    "t": "bench: refactor to use string interpolation in `@stdlib/ndarray/base` (batch 1/9)"
+  },
+  {
+    "c": "2026-04-13T06:43:54Z",
+    "m": "2026-05-18T23:46:45Z",
+    "n": 11430,
+    "t": "bench: refactor to use string interpolation in `ndarray/base`"
+  },
+  {
+    "c": "2026-04-13T06:44:53Z",
+    "m": "2026-05-20T07:44:14Z",
+    "n": 11431,
+    "t": "bench: refactor to use string interpolation in `ndarray/base`"
+  },
+  {
+    "c": "2026-04-13T06:45:24Z",
+    "m": "2026-05-18T10:47:06Z",
+    "n": 11432,
+    "t": "bench: refactor to use string interpolation in `ndarray/base`"
+  },
+  {
+    "c": "2026-04-13T06:45:50Z",
+    "m": "2026-04-19T07:02:35Z",
+    "n": 11433,
+    "t": "bench: refactor to use string interpolation in `@stdlib/ndarray/base` (batch 4/9)"
+  },
+  {
+    "c": "2026-04-13T06:46:19Z",
+    "m": "2026-04-17T10:15:18Z",
+    "n": 11434,
+    "t": "bench: refactor to use string interpolation in `@stdlib/ndarray/base` (batch 5/9)"
+  },
+  {
+    "c": "2026-04-13T06:46:47Z",
+    "m": "2026-04-17T10:18:04Z",
+    "n": 11435,
+    "t": "bench: refactor to use string interpolation in `@stdlib/ndarray/base` (batch 6/9)"
+  },
+  {
+    "c": "2026-04-13T06:47:44Z",
+    "m": "2026-05-18T23:46:06Z",
+    "n": 11436,
+    "t": "bench: refactor to use string interpolation in `ndarray/base`"
+  },
+  {
+    "c": "2026-04-13T06:48:07Z",
+    "m": "2026-05-20T20:06:56Z",
+    "n": 11437,
+    "t": "bench: refactor to use string interpolation in `ndarray/base`"
+  },
+  {
+    "c": "2026-04-14T00:45:27Z",
+    "m": "2026-04-21T03:30:18Z",
+    "n": 11445,
+    "t": "bench: refactor to use string interpolation in `ndarray` (batch 2/2)"
+  },
+  {
+    "c": "2026-04-14T00:46:24Z",
+    "m": "2026-04-17T10:33:36Z",
+    "n": 11446,
+    "t": "bench: refactor to use string interpolation in `@stdlib/ndarray` (batch 1/2)"
+  },
+  {
+    "c": "2026-04-19T05:43:54Z",
+    "m": "2026-04-19T06:01:32Z",
+    "n": 11566,
+    "t": "bench: refactor to use dynamic memory allocation in `strided/base/dmap`"
+  },
+  {
+    "c": "2026-04-19T05:44:14Z",
+    "m": "2026-04-19T06:01:29Z",
+    "n": 11567,
+    "t": "bench: refactor to use dynamic memory allocation in `strided/base/dmap2`"
+  },
+  {
+    "c": "2026-04-19T05:50:42Z",
+    "m": "2026-04-19T06:01:26Z",
+    "n": 11568,
+    "t": "bench: refactor to use dynamic memory allocation in `strided/base/zmap`"
+  },
+  {
+    "c": "2026-04-19T15:40:49Z",
+    "m": "2026-04-20T00:34:20Z",
+    "n": 11588,
+    "t": "bench: refactor to use string interpolation in `wasm`"
+  },
+  {
+    "c": "2026-04-19T15:55:12Z",
+    "m": "2026-04-19T21:01:06Z",
+    "n": 11589,
+    "t": "bench: refactor to use string interpolation in `streams`"
+  },
+  {
+    "c": "2026-04-19T16:03:59Z",
+    "m": "2026-04-20T00:36:40Z",
+    "n": 11590,
+    "t": "bench: refactor to use string interpolation in `slice`"
+  },
+  {
+    "c": "2026-04-19T16:13:40Z",
+    "m": "2026-04-20T00:29:11Z",
+    "n": 11591,
+    "t": "bench: refactor to use string interpolation in `simulate`"
+  },
+  {
+    "c": "2026-04-19T16:16:49Z",
+    "m": "2026-04-20T00:26:50Z",
+    "n": 11592,
+    "t": "bench: refactor to use string interpolation in `repl`"
+  },
+  {
+    "c": "2026-04-19T16:22:40Z",
+    "m": "2026-04-20T00:27:18Z",
+    "n": 11593,
+    "t": "bench: refactor to use string interpolation in `regexp`"
+  },
+  {
+    "c": "2026-04-19T16:26:43Z",
+    "m": "2026-04-20T00:21:59Z",
+    "n": 11594,
+    "t": "bench: refactor to use string interpolation in `proxy`"
+  },
+  {
+    "c": "2026-04-19T16:37:32Z",
+    "m": "2026-04-20T00:23:49Z",
+    "n": 11597,
+    "t": "bench: refactor to use string interpolation in `process`"
+  },
+  {
+    "c": "2026-04-19T16:41:31Z",
+    "m": "2026-04-20T00:32:45Z",
+    "n": 11599,
+    "t": "bench: refactor to use string interpolation in `plot`"
+  },
+  {
+    "c": "2026-04-19T16:50:02Z",
+    "m": "2026-04-20T00:25:23Z",
+    "n": 11602,
+    "t": "bench: refactor to use string interpolation in `object`"
+  },
+  {
+    "c": "2026-04-19T16:58:39Z",
+    "m": "2026-04-20T00:42:45Z",
+    "n": 11603,
+    "t": "bench: refactor to use string interpolation in `number`"
+  },
+  {
+    "c": "2026-04-19T17:01:33Z",
+    "m": "2026-04-19T22:56:32Z",
+    "n": 11605,
+    "t": "bench: refactor to use string interpolation in `nlp`"
+  },
+  {
+    "c": "2026-04-19T17:04:09Z",
+    "m": "2026-04-20T00:26:08Z",
+    "n": 11606,
+    "t": "bench: refactor to use string interpolation in `namespace`"
+  },
+  {
+    "c": "2026-04-19T17:07:24Z",
+    "m": "2026-04-19T21:01:02Z",
+    "n": 11608,
+    "t": "bench: refactor to use string interpolation in `ml`"
+  },
+  {
+    "c": "2026-04-19T17:11:28Z",
+    "m": "2026-04-19T21:00:58Z",
+    "n": 11610,
+    "t": "bench: refactor to use string interpolation in `lapack`"
+  },
+  {
+    "c": "2026-04-19T17:22:35Z",
+    "m": "2026-04-19T21:00:54Z",
+    "n": 11612,
+    "t": "bench: refactor to use string interpolation in `iter`"
+  },
+  {
+    "c": "2026-04-19T17:26:07Z",
+    "m": "2026-04-19T21:00:50Z",
+    "n": 11614,
+    "t": "bench: refactor to use string interpolation in `function`"
+  },
+  {
+    "c": "2026-04-19T17:30:37Z",
+    "m": "2026-04-20T00:38:54Z",
+    "n": 11615,
+    "t": "bench: refactor to use string interpolation in `fs`"
+  },
+  {
+    "c": "2026-04-19T17:36:09Z",
+    "m": "2026-04-19T22:57:28Z",
+    "n": 11616,
+    "t": "bench: refactor to use string interpolation in `error`"
+  },
+  {
+    "c": "2026-04-19T17:43:29Z",
+    "m": "2026-04-20T00:54:28Z",
+    "n": 11617,
+    "t": "bench: refactor to use string interpolation in `dstructs`"
+  },
+  {
+    "c": "2026-04-19T17:50:25Z",
+    "m": "2026-04-19T21:00:46Z",
+    "n": 11618,
+    "t": "bench: refactor to use string interpolation in `datasets`"
+  },
+  {
+    "c": "2026-04-19T18:06:34Z",
+    "m": "2026-04-20T00:18:46Z",
+    "n": 11619,
+    "t": "bench: refactor to use string interpolation in `console`"
+  },
+  {
+    "c": "2026-04-19T18:11:14Z",
+    "m": "2026-04-20T00:50:52Z",
+    "n": 11620,
+    "t": "bench: refactor to use string interpolation in `complex`"
+  },
+  {
+    "c": "2026-04-19T18:15:47Z",
+    "m": "2026-04-19T21:00:42Z",
+    "n": 11621,
+    "t": "bench: refactor to use string interpolation in `cli`"
+  },
+  {
+    "c": "2026-04-19T18:18:40Z",
+    "m": "2026-04-20T00:17:32Z",
+    "n": 11622,
+    "t": "bench: refactor to use string interpolation in `buffer`"
+  },
+  {
+    "c": "2026-04-19T18:20:39Z",
+    "m": "2026-04-19T21:00:39Z",
+    "n": 11623,
+    "t": "bench: refactor to use string interpolation in `boolean`"
+  },
+  {
+    "c": "2026-04-19T18:24:05Z",
+    "m": "2026-04-20T00:30:36Z",
+    "n": 11624,
+    "t": "bench: refactor to use string interpolation in `_tools`"
+  },
+  {
+    "c": "2026-04-19T19:12:01Z",
+    "m": "2026-04-19T19:20:24Z",
+    "n": 11628,
+    "t": "fix: use `empty` instead of `zeros` in `array/from-scalar`"
+  },
+  {
+    "c": "2026-04-21T09:17:33Z",
+    "m": "2026-04-21T10:19:30Z",
+    "n": 11690,
+    "t": "bench: replace M_PI in `math/base/special/sincospi` C benchmark"
+  },
+  {
+    "c": "2026-05-06T17:25:56Z",
+    "m": "2026-05-06T19:04:55Z",
+    "n": 11969,
+    "t": "docs: fix accessor example arguments in `array/base/arraylike2object`"
+  },
+  {
+    "c": "2026-05-06T17:27:17Z",
+    "m": "2026-05-06T19:06:40Z",
+    "n": 11970,
+    "t": "docs: improve doctests for complex number instances in `array/base/accessors`"
+  },
+  {
+    "c": "2026-05-06T17:28:32Z",
+    "m": "2026-05-06T23:49:55Z",
+    "n": 11971,
+    "t": "docs: fix `arraylike2object` example in `array/base` namespace declarations"
+  },
+  {
+    "c": "2026-05-06T17:30:00Z",
+    "m": "2026-05-06T19:14:11Z",
+    "n": 11972,
+    "t": "docs: improve doctests for complex number instances in `array/complex64`"
+  },
+  {
+    "c": "2026-05-06T17:30:35Z",
+    "m": "2026-05-06T19:16:44Z",
+    "n": 11973,
+    "t": "docs: improve doctests for complex number instances in `array/complex128`"
+  },
+  {
+    "c": "2026-05-06T17:31:14Z",
+    "m": "2026-05-06T19:17:43Z",
+    "n": 11974,
+    "t": "docs: improve doctests for complex number instances in `array/to-fancy`"
+  },
+  {
+    "c": "2026-05-06T18:30:35Z",
+    "m": "2026-05-08T00:01:43Z",
+    "n": 11975,
+    "t": "docs: improve doctests for complex number typed arrays in `blas/base/wasm`"
+  },
+  {
+    "c": "2026-05-06T19:17:52Z",
+    "m": "2026-05-06T23:41:12Z",
+    "n": 11976,
+    "t": "docs: remove unused imports in `blas/base/zswap`"
+  },
+  {
+    "c": "2026-05-06T19:19:32Z",
+    "m": "2026-05-07T00:44:05Z",
+    "n": 11977,
+    "t": "docs: improve doctests for complex number typed arrays in `blas/ext/base/zfill`"
+  },
+  {
+    "c": "2026-05-06T20:15:06Z",
+    "m": "2026-05-07T00:40:36Z",
+    "n": 11979,
+    "t": "docs: improve doctests for complex number typed arrays in `constants`"
+  },
+  {
+    "c": "2026-05-09T18:07:04Z",
+    "m": "2026-06-17T00:49:41Z",
+    "n": 12014,
+    "t": "build: add support for `/stdlib todo` slash command"
+  },
+  {
+    "c": "2026-05-09T20:12:39Z",
+    "m": "2026-05-09T23:15:13Z",
+    "n": 12018,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/clacgv`"
+  },
+  {
+    "c": "2026-05-09T20:13:23Z",
+    "m": "2026-05-09T23:13:58Z",
+    "n": 12019,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/clacpy`"
+  },
+  {
+    "c": "2026-05-09T20:13:43Z",
+    "m": "2026-05-09T23:12:34Z",
+    "n": 12020,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/claset`"
+  },
+  {
+    "c": "2026-05-09T20:14:03Z",
+    "m": "2026-05-09T23:11:19Z",
+    "n": 12021,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/crot`"
+  },
+  {
+    "c": "2026-05-09T20:14:20Z",
+    "m": "2026-05-09T23:09:49Z",
+    "n": 12022,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/zlacgv`"
+  },
+  {
+    "c": "2026-05-09T20:14:37Z",
+    "m": "2026-05-09T23:08:25Z",
+    "n": 12023,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/zlacpy`"
+  },
+  {
+    "c": "2026-05-09T20:14:55Z",
+    "m": "2026-05-09T23:16:24Z",
+    "n": 12024,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/zlaset`"
+  },
+  {
+    "c": "2026-05-09T20:15:15Z",
+    "m": "2026-05-09T23:17:35Z",
+    "n": 12025,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base/zrot`"
+  },
+  {
+    "c": "2026-05-09T20:15:28Z",
+    "m": "2026-05-09T23:06:14Z",
+    "n": 12026,
+    "t": "docs: improve doctests for complex number typed arrays in `lapack/base`"
+  },
+  {
+    "c": "2026-05-09T20:30:38Z",
+    "m": "2026-05-09T23:03:56Z",
+    "n": 12028,
+    "t": "docs: improve doctests for complex number typed arrays in `utils`"
+  },
+  {
+    "c": "2026-05-09T23:39:04Z",
+    "m": "2026-05-10T00:55:42Z",
+    "n": 12032,
+    "t": "docs: improve doctests for complex number typed arrays in `strided`"
+  },
+  {
+    "c": "2026-05-10T05:09:04Z",
+    "m": "2026-05-10T11:08:26Z",
+    "n": 12038,
+    "t": "docs: fix `Complex64` import in `array/from-scalar`"
+  },
+  {
+    "c": "2026-05-10T05:09:22Z",
+    "m": "2026-05-10T11:09:30Z",
+    "n": 12039,
+    "t": "fix: use correct `Complex64` import in `math/base/special/cceilf`"
+  },
+  {
+    "c": "2026-05-10T05:10:09Z",
+    "m": "2026-05-10T11:10:17Z",
+    "n": 12040,
+    "t": "bench: fix `Complex64` import in `math/base/special/cphasef`"
+  },
+  {
+    "c": "2026-05-10T05:10:30Z",
+    "m": "2026-05-10T11:11:10Z",
+    "n": 12041,
+    "t": "test: fix `Complex64` import in `strided/base/binary`"
+  },
+  {
+    "c": "2026-05-10T05:11:38Z",
+    "m": "2026-05-10T11:12:19Z",
+    "n": 12042,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/filter-map`"
+  },
+  {
+    "c": "2026-05-10T05:12:07Z",
+    "m": "2026-05-10T11:13:45Z",
+    "n": 12043,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/from-scalar`"
+  },
+  {
+    "c": "2026-05-10T05:12:25Z",
+    "m": "2026-05-10T11:24:17Z",
+    "n": 12044,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/unary`"
+  },
+  {
+    "c": "2026-05-10T05:12:58Z",
+    "m": "2026-05-10T11:27:10Z",
+    "n": 12045,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/nullary`"
+  },
+  {
+    "c": "2026-05-10T05:13:23Z",
+    "m": "2026-05-10T11:31:49Z",
+    "n": 12046,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/unary-accumulate`"
+  },
+  {
+    "c": "2026-05-10T05:13:44Z",
+    "m": "2026-05-10T11:25:53Z",
+    "n": 12047,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/unary-by`"
+  },
+  {
+    "c": "2026-05-10T05:14:11Z",
+    "m": "2026-05-10T11:42:40Z",
+    "n": 12048,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/broadcast-scalar`"
+  },
+  {
+    "c": "2026-05-10T05:14:28Z",
+    "m": "2026-05-10T11:29:11Z",
+    "n": 12049,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/from-scalar`"
+  },
+  {
+    "c": "2026-05-10T05:14:44Z",
+    "m": "2026-05-10T11:17:21Z",
+    "n": 12050,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/map`"
+  },
+  {
+    "c": "2026-05-10T05:15:16Z",
+    "m": "2026-05-10T11:15:59Z",
+    "n": 12051,
+    "t": "docs: improve doctests for complex number typed arrays in `ndarray/base/assign`"
+  },
+  {
+    "c": "2026-05-10T18:06:25Z",
+    "m": "2026-05-10T21:07:01Z",
+    "n": 12057,
+    "t": "docs: use correct `real`/`imag` import in `strided/base/cmap`"
+  },
+  {
+    "c": "2026-05-10T18:06:47Z",
+    "m": "2026-05-10T21:05:54Z",
+    "n": 12058,
+    "t": "bench: fix `real` import in `strided/napi/cmap`"
+  },
+  {
+    "c": "2026-05-10T18:07:20Z",
+    "m": "2026-05-10T21:08:33Z",
+    "n": 12059,
+    "t": "test: use correct `float32` imports in `strided/base`"
+  },
+  {
+    "c": "2026-05-10T18:07:53Z",
+    "m": "2026-05-10T21:06:41Z",
+    "n": 12060,
+    "t": "docs: fix `real`/`imag` import in `ndarray/base/unary-by`"
+  },
+  {
+    "c": "2026-05-10T18:08:16Z",
+    "m": "2026-05-10T21:11:36Z",
+    "n": 12061,
+    "t": "test: fix `Float32Array` import in `stats/strided/snanmin`"
+  },
+  {
+    "c": "2026-05-10T18:08:35Z",
+    "m": "2026-05-10T21:13:39Z",
+    "n": 12062,
+    "t": "test: fix `Float32Array` import in `stats/strided/snanminabs`"
+  },
+  {
+    "c": "2026-05-10T18:09:03Z",
+    "m": "2026-05-10T21:11:14Z",
+    "n": 12063,
+    "t": "test: fix `Uint8Array` import in `array/bool`"
+  },
+  {
+    "c": "2026-05-10T18:09:23Z",
+    "m": "2026-05-10T21:12:36Z",
+    "n": 12064,
+    "t": "test: fix `Complex128` import in `array/complex128`"
+  },
+  {
+    "c": "2026-05-10T18:09:46Z",
+    "m": "2026-05-10T21:13:19Z",
+    "n": 12065,
+    "t": "test: fix `real`/`imag` import in `complex/float32/base/add`"
+  },
+  {
+    "c": "2026-05-10T18:10:11Z",
+    "m": "2026-05-10T21:14:40Z",
+    "n": 12066,
+    "t": "docs: fix `Complex64Array` import in `array/base/take`"
+  },
+  {
+    "c": "2026-05-10T18:56:30Z",
+    "m": "2026-05-10T21:17:09Z",
+    "n": 12068,
+    "t": "docs: improve doctests for complex number typed arrays in `utils/map-reduce`"
+  },
+  {
+    "c": "2026-05-10T18:56:48Z",
+    "m": "2026-05-10T21:15:54Z",
+    "n": 12069,
+    "t": "docs: improve doctests for complex number typed arrays in `utils/reduce`"
+  },
+  {
+    "c": "2026-05-10T18:57:03Z",
+    "m": "2026-05-10T21:18:09Z",
+    "n": 12070,
+    "t": "docs: improve doctests for complex number typed arrays in `utils/reduce-right`"
+  },
+  {
+    "c": "2026-05-10T18:57:29Z",
+    "m": "2026-05-10T21:19:00Z",
+    "n": 12071,
+    "t": "docs: improve doctests for complex number typed arrays in `array/complex128`"
+  },
+  {
+    "c": "2026-05-10T18:57:44Z",
+    "m": "2026-05-10T21:19:51Z",
+    "n": 12072,
+    "t": "docs: improve doctests for complex number typed arrays in `array/complex64`"
+  },
+  {
+    "c": "2026-05-10T18:58:01Z",
+    "m": "2026-05-10T21:20:48Z",
+    "n": 12073,
+    "t": "docs: improve doctests for complex number typed arrays in `utils/map-reduce-right`"
+  },
+  {
+    "c": "2026-05-16T03:44:34Z",
+    "m": "2026-05-17T06:58:44Z",
+    "n": 12152,
+    "t": "fix: replace deprecated `context.getFilename()` with `context.filename` in ESLint rules"
+  },
+  {
+    "c": "2026-05-17T06:11:20Z",
+    "m": "2026-05-17T07:32:37Z",
+    "n": 12166,
+    "t": "feat: add `blas/ext/base/gaxpb`"
+  },
+  {
+    "c": "2026-05-17T06:22:07Z",
+    "m": "2026-05-17T07:01:16Z",
+    "n": 12167,
+    "t": "fix: correct markdown lint flag variable names"
+  },
+  {
+    "c": "2026-05-17T06:33:50Z",
+    "m": "2026-05-17T07:08:08Z",
+    "n": 12169,
+    "t": "fix: update `blas/ext/base/gapx` TypeScript test type expectations"
+  },
+  {
+    "c": "2026-05-17T17:31:41Z",
+    "m": "2026-05-19T05:22:12Z",
+    "n": 12181,
+    "t": "feat: add `blas/ext/base/daxpb`"
+  },
+  {
+    "c": "2026-05-19T06:15:00Z",
+    "m": "2026-05-19T06:47:20Z",
+    "n": 12200,
+    "t": "feat: add `blas/ext/base/saxpb`"
+  },
+  {
+    "c": "2026-05-22T06:29:11Z",
+    "m": "2026-05-24T20:09:59Z",
+    "n": 12239,
+    "t": "feat: add `blas/ext/base/capx`"
+  },
+  {
+    "c": "2026-05-25T05:43:03Z",
+    "m": "2026-05-26T10:17:09Z",
+    "n": 12274,
+    "t": "feat: add `blas/ext/base/caxpb`"
+  },
+  {
+    "c": "2026-05-25T06:19:42Z",
+    "m": "2026-05-25T09:49:10Z",
+    "n": 12275,
+    "t": "feat: add `blas/ext/base/zapx`"
+  },
+  {
+    "c": "2026-05-25T06:47:28Z",
+    "m": "2026-05-26T10:26:34Z",
+    "n": 12276,
+    "t": "feat: add `blas/ext/base/ndarray/daxpb`"
+  },
+  {
+    "c": "2026-05-25T06:54:54Z",
+    "m": "2026-05-29T08:19:11Z",
+    "n": 12277,
+    "t": "feat: add `blas/ext/base/ndarray/saxpb`"
+  },
+  {
+    "c": "2026-05-25T07:37:07Z",
+    "m": "2026-05-25T10:01:22Z",
+    "n": 12278,
+    "t": "feat: add `blas/ext/base/gxsa`"
+  },
+  {
+    "c": "2026-05-25T08:11:28Z",
+    "m": "2026-05-26T09:55:48Z",
+    "n": 12279,
+    "t": "feat: add `blas/ext/base/dxsa`"
+  },
+  {
+    "c": "2026-05-25T23:01:04Z",
+    "m": "2026-05-26T09:07:19Z",
+    "n": 12291,
+    "t": "feat: add `blas/ext/base/sxsa`"
+  },
+  {
+    "c": "2026-05-29T06:54:42Z",
+    "m": "2026-05-29T08:42:37Z",
+    "n": 12342,
+    "t": "feat: add `blas/ext/base/zaxpb`"
+  },
+  {
+    "c": "2026-05-29T07:48:17Z",
+    "m": "2026-05-29T09:33:29Z",
+    "n": 12344,
+    "t": "feat: add `blas/ext/base/cxsa`"
+  },
+  {
+    "c": "2026-05-29T07:54:05Z",
+    "m": "2026-05-29T08:10:20Z",
+    "n": 12345,
+    "t": "test: fix element annotations in ndarray offset tests"
+  },
+  {
+    "c": "2026-05-29T08:28:44Z",
+    "m": "2026-05-29T08:43:37Z",
+    "n": 12346,
+    "t": "build: fix PR coverage comment formatting"
+  },
+  {
+    "c": "2026-05-29T09:02:48Z",
+    "m": "2026-05-29T09:43:18Z",
+    "n": 12347,
+    "t": "feat: add `blas/ext/base/ndarray/dxsa`"
+  },
+  {
+    "c": "2026-05-29T14:56:07Z",
+    "m": "2026-05-29T21:55:52Z",
+    "n": 12350,
+    "t": "feat: add `blas/ext/base/ndarray/sxsa`"
+  },
+  {
+    "c": "2026-05-29T15:28:09Z",
+    "m": "2026-05-30T20:35:56Z",
+    "n": 12351,
+    "t": "feat: add `blas/ext/base/zxsa`"
+  },
+  {
+    "c": "2026-05-30T17:06:32Z",
+    "m": "2026-05-30T20:14:42Z",
+    "n": 12377,
+    "t": "feat: add `blas/ext/base/ndarray/caxpb`"
+  },
+  {
+    "c": "2026-05-30T23:04:18Z",
+    "m": "2026-05-31T00:33:33Z",
+    "n": 12380,
+    "t": "feat: add `blas/ext/base/gaxpby`"
+  },
+  {
+    "c": "2026-05-30T23:24:28Z",
+    "m": "2026-05-30T23:51:55Z",
+    "n": 12381,
+    "t": "feat: add `blas/ext/base/ndarray/zaxpb`"
+  },
+  {
+    "c": "2026-05-30T23:41:50Z",
+    "m": "2026-05-31T00:27:51Z",
+    "n": 12382,
+    "t": "feat: add `blas/ext/base/ndarray/gaxpb`"
+  },
+  {
+    "c": "2026-05-30T23:54:20Z",
+    "m": "2026-05-31T00:39:44Z",
+    "n": 12383,
+    "t": "feat: add `blas/ext/base/ndarray/cxsa`"
+  },
+  {
+    "c": "2026-05-31T02:31:04Z",
+    "m": "2026-05-31T22:33:01Z",
+    "n": 12385,
+    "t": "feat: add `blas/ext/base/gwxsa`"
+  },
+  {
+    "c": "2026-05-31T21:34:00Z",
+    "m": "2026-05-31T23:37:12Z",
+    "n": 12406,
+    "t": "feat: add `blas/ext/base/gxpy`"
+  },
+  {
+    "c": "2026-05-31T21:50:33Z",
+    "m": "2026-05-31T22:18:14Z",
+    "n": 12407,
+    "t": "feat: add `blas/ext/base/ndarray/zxsa`"
+  },
+  {
+    "c": "2026-05-31T22:30:53Z",
+    "m": "2026-05-31T22:36:15Z",
+    "n": 12408,
+    "t": "test: add element comments and sentinel values to `blas/ext/base/ndarray/zxsa`"
+  },
+  {
+    "c": "2026-05-31T22:46:11Z",
+    "m": "2026-05-31T23:14:53Z",
+    "n": 12409,
+    "t": "test: fix complex array assertions"
+  },
+  {
+    "c": "2026-06-01T02:24:52Z",
+    "m": "2026-06-01T04:49:36Z",
+    "n": 12413,
+    "t": "feat: add `blas/ext/base/gwapx`"
+  },
+  {
+    "c": "2026-06-01T04:06:37Z",
+    "m": "2026-06-01T04:36:11Z",
+    "n": 12417,
+    "t": "feat: add `blas/ext/base/ndarray/gxsa`"
+  },
+  {
+    "c": "2026-06-01T04:20:40Z",
+    "m": "2026-06-01T04:33:23Z",
+    "n": 12418,
+    "t": "refactor: rename output array parameter from `y` to `w` in `blas/ext/base/gwxsa`"
+  },
+  {
+    "c": "2026-06-03T05:44:14Z",
+    "m": "2026-06-03T07:11:19Z",
+    "n": 12506,
+    "t": "feat: add `blas/ext/base/saxpby`"
+  },
+  {
+    "c": "2026-06-06T01:08:27Z",
+    "m": "2026-06-06T01:33:44Z",
+    "n": 12573,
+    "t": "feat: add `blas/ext/base/daxpby`"
+  },
+  {
+    "c": "2026-06-06T08:48:00Z",
+    "m": "2026-06-07T00:41:03Z",
+    "n": 12639,
+    "t": "feat: add `blas/ext/base/caxpby`"
+  },
+  {
+    "c": "2026-06-06T23:25:34Z",
+    "m": "2026-06-07T01:07:13Z",
+    "n": 12649,
+    "t": "feat: add `blas/ext/base/zaxpby`"
+  },
+  {
+    "c": "2026-06-07T00:28:49Z",
+    "m": "2026-06-07T06:31:54Z",
+    "n": 12650,
+    "t": "feat: add `blas/ext/base/swxsa`"
+  },
+  {
+    "c": "2026-06-07T22:56:51Z",
+    "m": "2026-06-07T23:43:44Z",
+    "n": 12683,
+    "t": "feat: add `blas/ext/base/dwxsa`"
+  },
+  {
+    "c": "2026-06-07T23:08:10Z",
+    "m": "2026-06-07T23:44:48Z",
+    "n": 12684,
+    "t": "refactor: remove intermediate variables in `blas/ext/base/caxpby`"
+  },
+  {
+    "c": "2026-06-08T03:42:10Z",
+    "m": "2026-06-12T22:46:24Z",
+    "n": 12691,
+    "t": "feat: add `blas/ext/base/cwxsa`"
+  },
+  {
+    "c": "2026-06-08T04:54:13Z",
+    "m": "2026-06-08T05:54:58Z",
+    "n": 12694,
+    "t": "feat: add `blas/ext/base/ndarray/saxpby`"
+  },
+  {
+    "c": "2026-06-08T05:31:38Z",
+    "m": "2026-06-08T08:55:32Z",
+    "n": 12695,
+    "t": "feat: add `blas/ext/base/ndarray/caxpby`"
+  },
+  {
+    "c": "2026-06-08T06:14:52Z",
+    "m": "2026-06-08T08:50:31Z",
+    "n": 12696,
+    "t": "feat: add `blas/ext/base/ndarray/daxpby`"
+  },
+  {
+    "c": "2026-06-08T18:34:06Z",
+    "m": "2026-06-09T19:32:58Z",
+    "n": 12712,
+    "t": "feat: add `blas/ext/base/ndarray/zaxpby`"
+  },
+  {
+    "c": "2026-06-08T23:49:53Z",
+    "m": "2026-06-10T08:13:53Z",
+    "n": 12720,
+    "t": "feat: add `blas/ext/base/dxpy`"
+  },
+  {
+    "c": "2026-06-10T06:18:12Z",
+    "m": "2026-06-13T22:45:41Z",
+    "n": 12760,
+    "t": "feat: add `blas/ext/base/cxpy`"
+  },
+  {
+    "c": "2026-06-10T06:41:07Z",
+    "m": "2026-06-13T10:44:20Z",
+    "n": 12761,
+    "t": "feat: add `blas/ext/base/sxpy`"
+  },
+  {
+    "c": "2026-06-13T17:24:42Z",
+    "m": "2026-06-13T21:44:39Z",
+    "n": 12857,
+    "t": "feat: add `blas/ext/base/zwxsa`"
+  },
+  {
+    "c": "2026-06-14T03:31:18Z",
+    "m": "2026-06-15T09:21:39Z",
+    "n": 12865,
+    "t": "feat: add `blas/ext/base/zxpy`"
+  },
+  {
+    "c": "2026-06-14T03:48:11Z",
+    "m": "2026-06-14T10:10:27Z",
+    "n": 12866,
+    "t": "feat: add `blas/ext/base/ndarray/gaxpby`"
+  },
+  {
+    "c": "2026-06-14T05:06:38Z",
+    "m": "2026-06-16T04:35:03Z",
+    "n": 12868,
+    "t": "feat: add `blas/ext/base/dwapx`"
+  },
+  {
+    "c": "2026-06-14T05:33:37Z",
+    "m": "2026-06-16T08:00:47Z",
+    "n": 12869,
+    "t": "feat: add `blas/ext/base/swapx`"
+  },
+  {
+    "c": "2026-06-14T16:45:54Z",
+    "m": "2026-06-14T18:46:02Z",
+    "n": 12880,
+    "t": "docs: update `blas/ext/base/ndarray` scalar helper imports"
+  },
+  {
+    "c": "2026-06-14T18:43:55Z",
+    "m": "2026-06-15T09:22:47Z",
+    "n": 12884,
+    "t": "chore: modernize benchmarks and examples"
+  },
+  {
+    "c": "2026-06-14T19:05:07Z",
+    "m": "2026-06-15T09:16:07Z",
+    "n": 12886,
+    "t": "test: fix complex array indexing in `blas/ext/base/cxpy`"
+  },
+  {
+    "c": "2026-06-21T21:34:34Z",
+    "m": "2026-06-22T02:40:36Z",
+    "n": 13025,
+    "t": "feat: add `blas/ext/base/cwapx`"
+  },
+  {
+    "c": "2026-06-21T21:52:56Z",
+    "m": "2026-06-21T23:54:01Z",
+    "n": 13026,
+    "t": "feat: add `blas/ext/base/zwapx`"
+  },
+  {
+    "c": "2026-06-21T22:14:29Z",
+    "m": "2026-06-21T23:09:03Z",
+    "n": 13027,
+    "t": "feat: add `blas/ext/base/gxsy`"
+  },
+  {
+    "c": "2026-06-21T22:46:09Z",
+    "m": "2026-06-21T23:16:54Z",
+    "n": 13028,
+    "t": "feat: add `blas/ext/base/dxsy`"
+  },
+  {
+    "c": "2026-06-21T23:12:24Z",
+    "m": "2026-06-22T02:30:33Z",
+    "n": 13029,
+    "t": "feat: add `blas/ext/base/cxsy`"
+  },
+  {
+    "c": "2026-06-21T23:54:43Z",
+    "m": "2026-06-22T02:05:21Z",
+    "n": 13030,
+    "t": "feat: add `blas/ext/base/sxsy`"
+  },
+  {
+    "c": "2026-06-22T00:25:29Z",
+    "m": "2026-06-22T01:22:34Z",
+    "n": 13031,
+    "t": "feat: add `blas/ext/base/ndarray/gxpy`"
+  },
+  {
+    "c": "2026-06-22T00:43:24Z",
+    "m": "2026-06-22T01:32:57Z",
+    "n": 13032,
+    "t": "feat: add `blas/ext/base/ndarray/dxpy`"
+  },
+  {
+    "c": "2026-06-22T02:21:05Z",
+    "m": "2026-06-22T02:43:31Z",
+    "n": 13034,
+    "t": "feat: add `blas/ext/base/ndarray/sxpy`"
+  },
+  {
+    "c": "2026-06-22T02:39:15Z",
+    "m": "2026-06-22T02:46:36Z",
+    "n": 13035,
+    "t": "feat: add `blas/ext/base/ndarray/cxpy`"
+  },
+  {
+    "c": "2026-06-22T03:02:42Z",
+    "m": "2026-06-22T04:34:29Z",
+    "n": 13036,
+    "t": "feat: add `blas/ext/base/zxsy`"
+  },
+  {
+    "c": "2026-06-22T03:11:23Z",
+    "m": "2026-06-22T03:34:54Z",
+    "n": 13037,
+    "t": "feat: add `blas/ext/base/ndarray/zxpy`"
+  },
+  {
+    "c": "2026-06-22T03:25:03Z",
+    "m": "2026-06-23T05:13:57Z",
+    "n": 13041,
+    "t": "feat: add `blas/ext/base/ndarray/gxsy`"
+  },
+  {
+    "c": "2026-06-22T03:54:39Z",
+    "m": "2026-06-22T04:12:57Z",
+    "n": 13044,
+    "t": "docs: update function descriptions"
+  },
+  {
+    "c": "2026-06-22T03:55:48Z",
+    "m": "2026-06-23T05:07:09Z",
+    "n": 13045,
+    "t": "feat: add `blas/ext/base/ndarray/dxsy`"
+  },
+  {
+    "c": "2026-06-22T17:19:43Z",
+    "m": "2026-06-23T05:04:29Z",
+    "n": 13066,
+    "t": "feat: add `blas/ext/base/ndarray/sxsy`"
+  },
+  {
+    "c": "2026-06-23T05:10:59Z",
+    "m": "2026-06-23T06:13:25Z",
+    "n": 13081,
+    "t": "feat: add `blas/ext/base/ndarray/cxsy`"
+  },
+  {
+    "c": "2026-06-23T05:26:52Z",
+    "m": "2026-06-23T06:17:28Z",
+    "n": 13082,
+    "t": "feat: add `blas/ext/base/ndarray/zxsy`"
+  },
+  {
+    "c": "2026-06-23T06:12:58Z",
+    "m": "2026-06-23T06:26:23Z",
+    "n": 13085,
+    "t": "feat: add `blas/ext/base/gwax`"
+  },
+  {
+    "c": "2026-06-23T06:16:39Z",
+    "m": "2026-06-23T06:25:54Z",
+    "n": 13086,
+    "t": "docs: add missing trailing periods to package descriptions"
+  },
+  {
+    "c": "2026-06-23T06:53:43Z",
+    "m": "2026-06-23T08:21:28Z",
+    "n": 13087,
+    "t": "feat: add `blas/ext/base/gwxpy`"
+  },
+  {
+    "c": "2026-06-25T03:00:14Z",
+    "m": "2026-06-25T08:01:32Z",
+    "n": 13117,
+    "t": "feat: add `blas/ext/base/gwxsy`"
+  },
+  {
+    "c": "2026-06-25T03:38:50Z",
+    "m": "2026-06-25T10:19:32Z",
+    "n": 13122,
+    "t": "feat: add `blas/ext/base/gwaxpb`"
+  },
+  {
+    "c": "2026-06-25T07:06:03Z",
+    "m": "2026-06-25T09:45:06Z",
+    "n": 13124,
+    "t": "feat: add `blas/ext/base/gxmy`"
+  },
+  {
+    "c": "2026-06-25T07:10:13Z",
+    "m": "2026-06-25T07:44:30Z",
+    "n": 13125,
+    "t": "refactor: use operator assignment in `blas/ext/base/gxpy`"
+  },
+  {
+    "c": "2026-06-25T07:32:16Z",
+    "m": "2026-06-26T22:02:47Z",
+    "n": 13126,
+    "t": "feat: add `blas/ext/base/dxmy`"
+  },
+  {
+    "c": "2026-06-25T08:00:59Z",
+    "m": "2026-06-26T22:11:36Z",
+    "n": 13127,
+    "t": "feat: add `blas/ext/base/sxmy`"
+  },
+  {
+    "c": "2026-06-25T08:41:23Z",
+    "m": "2026-06-25T09:37:30Z",
+    "n": 13128,
+    "t": "refactor: simplify strided array type signatures"
+  },
+  {
+    "c": "2026-07-05T23:41:13Z",
+    "m": "2026-07-08T06:32:02Z",
+    "n": 13295,
+    "t": "feat: add `blas/ext/base/cxmy`"
+  },
+  {
+    "c": "2026-07-06T00:06:44Z",
+    "m": "2026-07-08T08:15:55Z",
+    "n": 13296,
+    "t": "feat: add `blas/ext/base/zxmy`"
+  },
+  {
+    "c": "2026-07-06T00:18:37Z",
+    "m": "2026-07-06T09:02:31Z",
+    "n": 13297,
+    "t": "feat: add `blas/ext/base/ndarray/dxmy`"
+  },
+  {
+    "c": "2026-07-06T00:41:20Z",
+    "m": "2026-07-06T09:06:08Z",
+    "n": 13298,
+    "t": "feat: add `blas/ext/base/ndarray/sxmy`"
+  },
+  {
+    "c": "2026-07-06T00:52:24Z",
+    "m": "2026-07-06T09:10:59Z",
+    "n": 13299,
+    "t": "feat: add `blas/ext/base/ndarray/gxmy`"
+  },
+  {
+    "c": "2026-07-06T01:09:31Z",
+    "m": "2026-07-08T08:29:28Z",
+    "n": 13300,
+    "t": "feat: add `blas/ext/base/ndarray/cxmy`"
+  },
+  {
+    "c": "2026-07-06T01:20:48Z",
+    "m": "2026-07-08T08:25:21Z",
+    "n": 13301,
+    "t": "feat: add `blas/ext/base/ndarray/zxmy`"
+  },
+  {
+    "c": "2026-07-06T01:50:53Z",
+    "m": "2026-07-07T02:47:56Z",
+    "n": 13302,
+    "t": "feat: add `blas/ext/base/dwax`"
+  },
+  {
+    "c": "2026-07-06T02:11:01Z",
+    "m": "2026-07-07T00:57:59Z",
+    "n": 13304,
+    "t": "feat: add `blas/ext/base/swax`"
+  },
+  {
+    "c": "2026-07-06T02:43:44Z",
+    "m": "2026-07-07T07:32:26Z",
+    "n": 13305,
+    "t": "feat: add `blas/ext/base/cwax`"
+  },
+  {
+    "c": "2026-07-06T03:09:39Z",
+    "m": "2026-07-07T07:47:37Z",
+    "n": 13315,
+    "t": "feat: add `blas/ext/base/zwax`"
+  },
+  {
+    "c": "2026-07-13T05:50:09Z",
+    "m": "2026-07-14T03:57:50Z",
+    "n": 13444,
+    "t": "feat: add `blas/ext/base/gxdy`"
+  },
+  {
+    "c": "2026-07-13T06:22:57Z",
+    "m": "2026-07-14T05:38:03Z",
+    "n": 13445,
+    "t": "feat: add `blas/ext/base/dxdy`"
+  },
+  {
+    "c": "2026-07-13T06:50:10Z",
+    "m": "2026-07-14T06:55:52Z",
+    "n": 13446,
+    "t": "feat: add `blas/ext/base/sxdy`"
+  },
+  {
+    "c": "2026-07-19T19:07:31Z",
+    "m": "2026-07-20T23:09:37Z",
+    "n": 13564,
+    "t": "feat: add `blas/ext/base/zxdy`"
+  },
+  {
+    "c": "2026-07-19T19:25:29Z",
+    "m": "2026-07-19T21:14:15Z",
+    "n": 13565,
+    "t": "feat: add `blas/ext/base/ndarray/dxdy`"
+  },
+  {
+    "c": "2026-07-19T19:38:31Z",
+    "m": "2026-07-19T21:17:39Z",
+    "n": 13566,
+    "t": "feat: add `blas/ext/base/ndarray/sxdy`"
+  },
+  {
+    "c": "2026-07-19T19:47:59Z",
+    "m": "2026-07-19T21:10:37Z",
+    "n": 13567,
+    "t": "feat: add `blas/ext/base/ndarray/gxdy`"
+  },
+  {
+    "c": "2026-07-19T20:00:45Z",
+    "m": "2026-07-20T23:26:22Z",
+    "n": 13568,
+    "t": "feat: add `blas/ext/base/ndarray/zxdy`"
+  },
+  {
+    "c": "2026-07-27T03:35:10Z",
+    "m": "2026-07-27T06:09:25Z",
+    "n": 13678,
+    "t": "feat: add `blas/ext/base/ndarray/swxsa`"
+  },
+  {
+    "c": "2026-07-27T03:46:30Z",
+    "m": "2026-07-27T06:08:52Z",
+    "n": 13679,
+    "t": "feat: add `blas/ext/base/ndarray/dwxsa`"
+  },
+  {
+    "c": "2026-07-27T04:04:44Z",
+    "m": "2026-07-27T05:59:07Z",
+    "n": 13680,
+    "t": "feat: add `blas/ext/base/ndarray/gwxsa`"
+  },
+  {
+    "c": "2026-07-27T04:36:57Z",
+    "m": "2026-07-27T08:26:02Z",
+    "n": 13681,
+    "t": "feat: add `blas/ext/base/ndarray/cwxsa`"
+  },
+  {
+    "c": "2026-07-27T05:40:09Z",
+    "m": "2026-07-27T08:30:31Z",
+    "n": 13682,
+    "t": "feat: add `blas/ext/base/ndarray/zwxsa`"
+  },
+  {
+    "c": "2026-07-27T06:11:36Z",
+    "m": "2026-07-27T06:30:27Z",
+    "n": 13683,
+    "t": "feat: add `blas/ext/base/gwxmy`"
+  },
+  {
+    "c": "2026-07-27T06:26:02Z",
+    "m": "2026-07-27T06:33:30Z",
+    "n": 13684,
+    "t": "docs: add link"
+  },
+  {
+    "c": "2026-07-27T06:36:22Z",
+    "m": "2026-07-27T08:32:40Z",
+    "n": 13685,
+    "t": "docs: add link"
+  },
+  {
+    "c": "2026-07-27T07:29:27Z",
+    "m": "2026-07-28T07:58:22Z",
+    "n": 13688,
+    "t": "feat: add `blas/ext/base/dwxmy`"
+  },
+  {
+    "c": "2026-07-28T09:54:22Z",
+    "m": "2026-07-30T05:53:53Z",
+    "n": 13713,
+    "t": "feat: add `blas/ext/base/swxmy`"
+  },
+  {
+    "c": "2026-07-28T10:27:59Z",
+    "m": "2026-10-01T01:19:39Z",
+    "n": 13714,
+    "t": "feat: add `blas/ext/base/cwxmy`"
+  },
+  {
+    "c": "2026-07-28T10:49:19Z",
+    "m": "2026-07-31T06:59:00Z",
+    "n": 13715,
+    "t": "feat: add `blas/ext/base/zwxmy`"
+  },
+  {
+    "c": "2026-07-28T11:38:12Z",
+    "m": "2026-07-29T06:11:45Z",
+    "n": 13718,
+    "t": "feat: add `blas/ext/base/dwxpy`"
+  },
+  {
+    "c": "2026-07-28T11:39:53Z",
+    "m": "2026-07-28T20:39:05Z",
+    "n": 13719,
+    "t": "docs: extract options variable in `dwxmy` examples"
+  },
+  {
+    "c": "2026-07-28T11:59:40Z",
+    "m": "2026-07-30T05:46:25Z",
+    "n": 13721,
+    "t": "feat: add `blas/ext/base/swxpy`"
+  },
+  {
+    "c": "2026-07-30T02:35:52Z",
+    "m": "2026-07-30T05:36:44Z",
+    "n": 13764,
+    "t": "feat: add `blas/ext/base/dwxsy`"
+  },
+  {
+    "c": "2026-07-30T03:12:41Z",
+    "m": "2026-07-30T05:29:37Z",
+    "n": 13769,
+    "t": "feat: add `blas/ext/base/swxsy`"
+  },
+  {
+    "c": "2026-07-30T03:45:47Z",
+    "m": "2026-07-30T05:37:10Z",
+    "n": 13771,
+    "t": "build: add wasm configurations"
+  },
+  {
+    "c": "2026-07-31T05:16:05Z",
+    "m": "2026-09-05T00:25:53Z",
+    "n": 13793,
+    "t": "feat: add `blas/ext/base/cwxpy`"
+  },
+  {
+    "c": "2026-07-31T05:46:14Z",
+    "m": "2026-10-01T01:06:44Z",
+    "n": 13794,
+    "t": "feat: add `blas/ext/base/zwxpy`"
+  },
+  {
+    "c": "2026-07-31T06:25:25Z",
+    "m": "2026-08-01T05:58:53Z",
+    "n": 13795,
+    "t": "feat: add `blas/ext/base/zwxsy`"
+  },
+  {
+    "c": "2026-07-31T06:42:59Z",
+    "m": "2026-08-01T05:48:50Z",
+    "n": 13797,
+    "t": "feat: add `blas/ext/base/cwxsy`"
+  },
+  {
+    "c": "2026-08-01T20:32:34Z",
+    "m": "2026-08-01T20:56:00Z",
+    "n": 13844,
+    "t": "docs: update examples"
+  },
+  {
+    "c": "2026-08-01T21:10:55Z",
+    "m": "2026-08-01T22:05:49Z",
+    "n": 13845,
+    "t": "feat: add `blas/ext/base/gwxdy`"
+  },
+  {
+    "c": "2026-08-01T21:19:37Z",
+    "m": "2026-08-01T22:12:07Z",
+    "n": 13846,
+    "t": "docs: update examples"
+  },
+  {
+    "c": "2026-08-01T21:46:54Z",
+    "m": "2026-08-04T03:22:19Z",
+    "n": 13848,
+    "t": "feat: add `blas/ext/base/dwxdy`"
+  },
+  {
+    "c": "2026-08-01T22:35:59Z",
+    "m": "2026-08-01T22:53:01Z",
+    "n": 13849,
+    "t": "bench: update benchmarks to use decimal literals"
+  },
+  {
+    "c": "2026-08-03T00:26:39Z",
+    "m": "2026-08-04T04:02:36Z",
+    "n": 13869,
+    "t": "feat: add `blas/ext/base/swxdy`"
+  },
+  {
+    "c": "2026-08-04T07:38:58Z",
+    "m": "2026-10-01T01:30:56Z",
+    "n": 13909,
+    "t": "feat: add `blas/ext/base/cxdy`"
+  },
+  {
+    "c": "2026-08-07T09:01:17Z",
+    "m": "2026-08-08T03:12:59Z",
+    "n": 14008,
+    "t": "build: add ARM64 architecture support to devcontainer"
+  },
+  {
+    "c": "2026-08-09T19:44:50Z",
+    "m": "2026-10-02T04:18:49Z",
+    "n": 14106,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cexp`"
+  },
+  {
+    "c": "2026-08-27T04:23:12Z",
+    "m": "2026-08-27T06:22:40Z",
+    "n": 14683,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T04:28:32Z",
+    "m": "2026-08-27T06:16:34Z",
+    "n": 14684,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T04:32:24Z",
+    "m": "2026-08-27T06:11:04Z",
+    "n": 14685,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T04:34:51Z",
+    "m": "2026-08-27T06:12:52Z",
+    "n": 14686,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T04:37:31Z",
+    "m": "2026-09-04T09:37:28Z",
+    "n": 14687,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T04:41:26Z",
+    "m": "2026-08-27T06:34:11Z",
+    "n": 14688,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T04:45:58Z",
+    "m": "2026-08-27T06:00:46Z",
+    "n": 14689,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T05:35:10Z",
+    "m": "2026-08-27T05:46:05Z",
+    "n": 14690,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T05:40:13Z",
+    "m": "2026-08-27T06:26:04Z",
+    "n": 14691,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T05:52:13Z",
+    "m": "2026-09-04T05:05:36Z",
+    "n": 14695,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T05:53:35Z",
+    "m": "2026-08-27T06:29:10Z",
+    "n": 14696,
+    "t": "docs: add equations"
+  },
+  {
+    "c": "2026-08-27T06:00:47Z",
+    "m": "2026-08-27T06:31:18Z",
+    "n": 14697,
+    "t": "docs: add introductory text to READMEs"
+  },
+  {
+    "c": "2026-09-27T00:18:18Z",
+    "m": "2026-09-27T06:33:05Z",
+    "n": 15576,
+    "t": "fix: avoid overflow/underflow in C implementation of `truncated-normal/pdf`"
+  },
+  {
+    "c": "2026-09-27T00:43:10Z",
+    "m": "2026-09-27T06:26:15Z",
+    "n": 15577,
+    "t": "test: tighten fixture tolerances in `stats/base/dists/lognormal/pdf`"
+  },
+  {
+    "c": "2026-09-30T03:11:31Z",
+    "m": "2026-09-30T06:17:10Z",
+    "n": 15676,
+    "t": "fix: add parentheses to NaN macros"
+  },
+  {
+    "c": "2026-09-30T17:35:40Z",
+    "m": "2026-10-01T00:38:45Z",
+    "n": 15690,
+    "t": "feat: add `blas/ext/base/ndarray/dwapx`"
+  },
+  {
+    "c": "2026-09-30T18:07:51Z",
+    "m": "2026-10-01T00:32:15Z",
+    "n": 15691,
+    "t": "feat: add `blas/ext/base/ndarray/swapx`"
+  },
+  {
+    "c": "2026-09-30T18:33:33Z",
+    "m": "2026-09-30T19:24:04Z",
+    "n": 15694,
+    "t": "feat: add `blas/ext/base/ndarray/gwapx`"
+  },
+  {
+    "c": "2026-09-30T19:20:33Z",
+    "m": "2026-09-30T23:32:01Z",
+    "n": 15695,
+    "t": "feat: add `blas/ext/base/ndarray/cwapx`"
+  },
+  {
+    "c": "2026-09-30T19:42:34Z",
+    "m": "2026-09-30T23:29:01Z",
+    "n": 15697,
+    "t": "feat: add `blas/ext/base/ndarray/zwapx`"
+  },
+  {
+    "c": "2026-09-30T20:34:00Z",
+    "m": "2026-10-01T00:24:35Z",
+    "n": 15700,
+    "t": "feat: add `blas/ext/base/ndarray/dwax`"
+  },
+  {
+    "c": "2026-09-30T21:13:36Z",
+    "m": "2026-09-30T23:54:58Z",
+    "n": 15703,
+    "t": "feat: add `blas/ext/base/ndarray/swax`"
+  },
+  {
+    "c": "2026-09-30T21:55:01Z",
+    "m": "2026-09-30T23:00:30Z",
+    "n": 15705,
+    "t": "feat: add `blas/ext/base/ndarray/gwax`"
+  },
+  {
+    "c": "2026-09-30T22:31:27Z",
+    "m": "2026-09-30T22:53:08Z",
+    "n": 15709,
+    "t": "feat: add `blas/ext/base/ndarray/cwax`"
+  },
+  {
+    "c": "2026-09-30T22:54:59Z",
+    "m": "2026-09-30T23:45:56Z",
+    "n": 15710,
+    "t": "feat: add `blas/ext/base/ndarray/zwax`"
+  },
+  {
+    "c": "2026-10-01T04:31:52Z",
+    "m": "2026-10-01T05:40:29Z",
+    "n": 15720,
+    "t": "feat: add `blas/ext/base/ndarray/cxdy`"
+  },
+  {
+    "c": "2026-10-01T04:59:48Z",
+    "m": "2026-10-01T05:44:22Z",
+    "n": 15721,
+    "t": "feat: add `blas/ext/base/ndarray/gwxsy`"
+  },
+  {
+    "c": "2026-10-01T05:25:33Z",
+    "m": "2026-10-01T05:47:22Z",
+    "n": 15722,
+    "t": "feat: add `blas/ext/base/ndarray/gwxmy`"
+  },
+  {
+    "c": "2026-10-01T05:48:24Z",
+    "m": "2026-10-01T09:44:08Z",
+    "n": 15723,
+    "t": "feat: add `blas/ext/base/ndarray/gwxdy`"
+  },
+  {
+    "c": "2026-10-01T06:15:37Z",
+    "m": "2026-10-01T06:33:42Z",
+    "n": 15725,
+    "t": "feat: add `blas/ext/base/ndarray/gwaxpb`"
+  },
+  {
+    "c": "2026-10-01T07:11:23Z",
+    "m": "2026-10-14T12:27:35Z",
+    "n": 15729,
+    "t": "feat: add `blas/ext/base/zwxdy`"
+  },
+  {
+    "c": "2026-10-01T08:29:06Z",
+    "m": "2026-10-01T09:33:34Z",
+    "n": 15731,
+    "t": "feat: add `blas/ext/base/ndarray/dwxpy`"
+  },
+  {
+    "c": "2026-10-01T08:47:58Z",
+    "m": "2026-10-01T09:36:22Z",
+    "n": 15732,
+    "t": "feat: add `blas/ext/base/ndarray/swxpy`"
+  },
+  {
+    "c": "2026-10-01T09:17:59Z",
+    "m": "2026-10-01T09:40:00Z",
+    "n": 15734,
+    "t": "feat: add `blas/ext/base/ndarray/dwxsy`"
+  },
+  {
+    "c": "2026-10-01T09:48:36Z",
+    "m": "2026-10-01T10:35:51Z",
+    "n": 15735,
+    "t": "feat: add `blas/ext/base/ndarray/swxsy`"
+  },
+  {
+    "c": "2026-10-02T03:12:12Z",
+    "m": "2026-10-02T03:57:29Z",
+    "n": 15788,
+    "t": "feat: add `blas/ext/base/ndarray/dwxmy`"
+  },
+  {
+    "c": "2026-10-02T03:37:49Z",
+    "m": "2026-10-02T11:18:40Z",
+    "n": 15789,
+    "t": "feat: add `blas/ext/base/ndarray/swxmy`"
+  },
+  {
+    "c": "2026-10-02T04:18:33Z",
+    "m": "2026-10-02T11:23:55Z",
+    "n": 15791,
+    "t": "feat: add `blas/ext/base/ndarray/dwxdy`"
+  },
+  {
+    "c": "2026-10-02T04:54:39Z",
+    "m": "2026-10-12T18:02:48Z",
+    "n": 15792,
+    "t": "feat: add `blas/ext/base/ndarray/swxdy`"
+  },
+  {
+    "c": "2026-10-02T05:28:14Z",
+    "m": "2026-10-13T10:25:29Z",
+    "n": 15793,
+    "t": "feat: add `blas/ext/base/ndarray/cwxpy`"
+  },
+  {
+    "c": "2026-10-03T03:52:34Z",
+    "m": "2026-10-13T10:22:33Z",
+    "n": 15839,
+    "t": "feat: add `blas/ext/base/ndarray/zwxpy`"
+  },
+  {
+    "c": "2026-10-03T04:15:21Z",
+    "m": "2026-10-13T10:19:33Z",
+    "n": 15840,
+    "t": "feat: add `blas/ext/base/ndarray/cwxsy`"
+  },
+  {
+    "c": "2026-10-03T04:47:16Z",
+    "m": "2026-10-13T10:13:14Z",
+    "n": 15843,
+    "t": "feat: add `blas/ext/base/ndarray/zwxsy`"
+  },
+  {
+    "c": "2026-10-03T05:10:43Z",
+    "m": "2026-10-12T23:53:50Z",
+    "n": 15844,
+    "t": "feat: add `blas/ext/base/ndarray/cwxmy`"
+  },
+  {
+    "c": "2026-10-03T05:47:35Z",
+    "m": "2026-10-12T23:50:13Z",
+    "n": 15846,
+    "t": "feat: add `blas/ext/base/ndarray/zwxmy`"
+  },
+  {
+    "c": "2026-10-03T06:34:22Z",
+    "m": "2026-11-01T04:20:18Z",
+    "n": 15849,
+    "t": "feat: add `blas/ext/base/dwaxpb`"
+  },
+  {
+    "c": "2026-10-09T02:58:34Z",
+    "m": "2026-10-31T21:52:38Z",
+    "n": 16000,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cexpf`"
+  },
+  {
+    "c": "2026-10-09T03:50:48Z",
+    "m": "2026-10-31T21:53:46Z",
+    "n": 16003,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cceil`"
+  },
+  {
+    "c": "2026-10-10T02:49:57Z",
+    "m": "2026-10-31T21:53:52Z",
+    "n": 16025,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cfloor`"
+  },
+  {
+    "c": "2026-10-10T03:38:40Z",
+    "m": "2026-10-31T21:53:58Z",
+    "n": 16026,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cround`"
+  },
+  {
+    "c": "2026-10-10T04:24:36Z",
+    "m": "2026-10-31T21:54:04Z",
+    "n": 16028,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cceilf`"
+  },
+  {
+    "c": "2026-10-10T05:01:44Z",
+    "m": "2026-10-31T21:54:10Z",
+    "n": 16030,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cfloorf`"
+  },
+  {
+    "c": "2026-10-10T18:13:58Z",
+    "m": "2026-10-31T21:54:15Z",
+    "n": 16039,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/croundf`"
+  },
+  {
+    "c": "2026-10-10T19:04:40Z",
+    "m": "2026-10-31T21:54:20Z",
+    "n": 16043,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cinv`"
+  },
+  {
+    "c": "2026-10-10T19:51:20Z",
+    "m": "2026-10-31T21:54:26Z",
+    "n": 16044,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/cinvf`"
+  },
+  {
+    "c": "2026-10-11T03:55:17Z",
+    "m": "2026-10-31T21:54:33Z",
+    "n": 16050,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/ccis`"
+  },
+  {
+    "c": "2026-10-11T04:54:17Z",
+    "m": "2026-11-01T03:20:51Z",
+    "n": 16051,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/csignum`"
+  },
+  {
+    "c": "2026-10-11T05:23:03Z",
+    "m": "2026-11-01T03:20:57Z",
+    "n": 16052,
+    "t": "feat: add `assign` and `strided` methods to `math/base/special/csignumf`"
+  },
+  {
+    "c": "2026-10-13T03:15:46Z",
+    "m": "2026-10-13T16:32:07Z",
+    "n": 16101,
+    "t": "feat: add `blas/ext/base/gxpby`"
+  },
+  {
+    "c": "2026-10-13T03:58:50Z",
+    "m": "2026-11-01T04:20:11Z",
+    "n": 16102,
+    "t": "feat: add `blas/ext/base/dxpby`"
+  },
+  {
+    "c": "2026-10-24T22:44:32Z",
+    "m": "2026-11-01T04:36:31Z",
+    "n": 16306,
+    "t": "feat: add `blas/ext/base/swaxpb`"
+  },
+  {
+    "c": "2026-10-24T23:28:31Z",
+    "m": "2026-10-29T01:34:59Z",
+    "n": 16307,
+    "t": "feat: add `blas/ext/base/gxsadb`"
+  },
+  {
+    "c": "2026-11-01T06:43:31Z",
+    "m": "2026-11-07T08:26:59Z",
+    "n": 16430,
+    "t": "feat: add `blas/ext/base/ndarray/zwxdy`"
+  },
+  {
+    "c": "2026-11-01T19:06:39Z",
+    "m": "2026-11-08T08:28:26Z",
+    "n": 16449,
+    "t": "feat: add `blas/ext/base/ghad`"
+  },
+  {
+    "c": "2026-11-01T19:33:35Z",
+    "m": "2026-11-07T01:03:07Z",
+    "n": 16450,
+    "t": "feat: add `blas/ext/base/ndarray/dwaxpb`"
+  },
+  {
+    "c": "2026-11-01T19:52:04Z",
+    "m": "2026-11-07T00:58:53Z",
+    "n": 16451,
+    "t": "feat: add `blas/ext/base/ndarray/swaxpb`"
+  }
+]

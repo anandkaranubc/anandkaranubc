@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "fig": "node scripts/fig1.mjs"
+    "fig": "node scripts/fig-merges.mjs && node scripts/fig-ellipj.mjs && node scripts/marks.mjs"
   },
   "dependencies": {
     "@stdlib/math-base-special-ellipj": "^0.1.0"
