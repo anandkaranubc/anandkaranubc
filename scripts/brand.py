@@ -3,13 +3,16 @@
   python3 scripts/brand.py        (needs fontTools: pip install fonttools)
 
 Outputs, each as -light, -dark and an OS-following fallback (the hero also as -phone-light/-dark/-phone):
-  assets/hero*.svg            pixel portrait, name in Gig Pixel, two lines, the merged stamp
+  assets/hero*.svg            pixel portrait (it blinks), name in Gig Pixel, two lines, three dated stamps
   assets/plate-<project>*.svg a crop of a 2x site capture inside a pixel frame
+  assets/frieze*.svg          sn(z) on the complex plane, phase quantised to two tones on the pixel grid
 Sources: GigPixel.ttf and the goblin are copied from the git-into-gsoc and gitgoblin repos;
-portrait.txt is the 14x20 sprite (one character per pixel); shots/ are PNG8 Playwright
-captures of the live sites at 2880x1440, light and dark.
+portrait.txt is the 14x20 sprite (one character per pixel); shots/ are Playwright captures of
+the live sites at 2880x1440 (PNG8 for flat pages, centre-cropped JPEG for photographic ones).
+Needs fontTools and mpmath.
 """
-import base64, re
+import base64, cmath, math, re
+import mpmath as mp
 from pathlib import Path
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
@@ -36,10 +39,22 @@ def width(s, size):
 PORTRAIT = {'h': '#1b1512', 'H': '#3b312c', 's': '#e0b083', 'e': '#1b1512', 'b': '#3a2a22',
             'm': '#8a4a3a', 'W': '#f4f1fa', 't': '#d23b3b', 'w': '#f4f1fa', 'n': '#c48a5c'}
 def portrait(x, y, px):
+    """The sprite. Two lid layers with coprime periods close the eyes for about 150 ms at
+    irregular intervals; both stop under prefers-reduced-motion."""
     rows = (SRC / 'portrait.txt').read_text().split('\n')
-    cells = ''.join(f'<rect x="{x + cx * px}" y="{y + cy * px}" width="{px}" height="{px}" fill="{PORTRAIT[ch]}"/>'
-                    for cy, row in enumerate(rows) for cx, ch in enumerate(row) if ch in PORTRAIT)
-    return f'<g shape-rendering="crispEdges">{cells}</g>'
+    cells, lids = [], []
+    for cy, row in enumerate(rows):
+        for cx, ch in enumerate(row):
+            if ch in PORTRAIT:
+                cells.append(f'<rect x="{x + cx * px}" y="{y + cy * px}" width="{px}" height="{px}" fill="{PORTRAIT[ch]}"/>')
+            if ch == 'e':
+                lids.append(f'<rect x="{x + cx * px}" y="{y + cy * px}" width="{px}" height="{px}" fill="{PORTRAIT["n"]}"/>')
+    return (f'<g shape-rendering="crispEdges">{"".join(cells)}'
+            f'<g class="lid a">{"".join(lids)}</g><g class="lid b">{"".join(lids)}</g></g>')
+
+BLINK = ('@keyframes blink{0%,97.4%{opacity:0}97.5%,99.4%{opacity:1}99.5%,100%{opacity:0}}'
+         '.lid{opacity:0}.lid.a{animation:blink 7.3s step-end infinite}.lid.b{animation:blink 11.1s step-end -4s infinite}'
+         '@media(prefers-reduced-motion:reduce){.lid{animation:none}}')
 
 def inner(svg_path):
     s = (SRC / svg_path).read_text()
@@ -58,41 +73,79 @@ def style(scheme, extra=''):
     css = rules(T['light']) + '@media(prefers-color-scheme:dark){' + rules(T['dark']) + '}' if scheme == 'auto' else rules(T[scheme])
     return f'<style>{css}{extra}</style>'
 
-def stamp(x, y, scale=1.0):
-    """A passport-style stamp like git-into-gsoc's: double outline, a little rotated, dated."""
-    w, h = 296, 128
-    big, mid, date = 'merged.', '580 pull requests into stdlib', 'dec 2024 to date'
-    body = (f'<rect class="stamp-o" x="0" y="0" width="{w}" height="{h}" rx="10" fill="none" stroke-width="5"/>'
-            f'<rect class="stamp-o" x="9" y="9" width="{w - 18}" height="{h - 18}" rx="6" fill="none" stroke-width="2"/>'
-            f'{text(big, 44, (w - width(big, 44)) / 2, 56, "stamp")}'
-            f'{text(mid, 20, (w - width(mid, 20)) / 2, 86, "stamp")}'
-            f'{text(date, 16, (w - width(date, 16)) / 2, 110, "stamp")}')
-    return f'<g transform="translate({x} {y}) scale({scale}) rotate(-7 {w / 2} {h / 2})">{body}</g>'
+def fit(txt, size, room):
+    return min(size, room / width(txt, 1))
 
-STAMP_CSS = '.stamp-o{stroke:currentColor}'
+def stamp(x, y, scale, angle, lines, cls='stamp'):
+    """A passport-style stamp like git-into-gsoc's: double outline, a little rotated, dated.
+    lines = (big, mid, small); text sizes shrink to fit the box."""
+    w, h = 296, 128
+    big, mid, small = lines
+    sb, sm, ss = fit(big, 44, w - 40), fit(mid, 20, w - 40), fit(small, 16, w - 40)
+    body = (f'<rect x="0" y="0" width="{w}" height="{h}" rx="10" fill="none" stroke="currentColor" stroke-width="5"/>'
+            f'<rect x="9" y="9" width="{w - 18}" height="{h - 18}" rx="6" fill="none" stroke="currentColor" stroke-width="2"/>'
+            f'{text(big, sb, (w - width(big, sb)) / 2, 56, "cc")}'
+            f'{text(mid, sm, (w - width(mid, sm)) / 2, 86, "cc")}'
+            f'{text(small, ss, (w - width(small, ss)) / 2, 110, "cc")}')
+    return f'<g class="{cls}" transform="translate({x} {y}) scale({scale}) rotate({angle} {w / 2} {h / 2})">{body}</g>'
+
+STAMPS = [
+    ('merged.', '580 pull requests into stdlib', 'dec 2024 to date', 'stamp-merge'),
+    ('gsoc 2025.', 'special functions in js and c', 'google summer of code, stdlib', 'stamp-ink'),
+    ('mlh fellowship.', 'openstack, python-ironicclient', 'spring 2026', 'stamp-ink'),
+]
+STAMP_CSS = '.cc{fill:currentColor}'
 
 def hero(scheme, phone=False):
-    lines = ['numerical kernels for stdlib.', 'tools that get people into open source.']
+    lines = ['numerical kernels, open-source doors,', 'calculus on paper. cs and math at ubc.']
+    m, g, f = STAMPS
     if not phone:
-        W, H = 960, 252
-        parts = [portrait(0, 8, 7),                                       # 98 x 140
-                 text('karan anand', 84, 130, 96),
-                 text(lines[0], 26, 130, 140, 'mute'), text(lines[1], 26, 130, 176, 'mute'),
-                 stamp(652, 84)]
+        W, H = 960, 300
+        parts = [portrait(0, 14, 7),                                       # 98 x 140
+                 text('karan anand', 84, 130, 102),
+                 text(lines[0], 24, 130, 146, 'mute'), text(lines[1], 24, 130, 180, 'mute'),
+                 stamp(724, -2, 0.7, 6, g[:3], g[3]),
+                 stamp(578, 102, 1.0, -7, m[:3], m[3]),
+                 stamp(704, 212, 0.64, -3, f[:3], f[3])]
     else:
-        W, H = 480, 262
-        parts = [portrait(0, 0, 5),                                       # 70 x 100
+        W, H = 480, 246
+        parts = [portrait(0, 0, 5),                                        # 70 x 100
                  text('karan anand', 44, 90, 58),
-                 text(lines[0], 17, 90, 90, 'mute'), text(lines[1], 17, 90, 114, 'mute'),
-                 stamp(94, 136, 0.68)]
-    # the stamp outline takes the stamp colour through currentColor on its group
-    svg = ''.join(parts).replace('<g transform="translate', '<g class="stamp-g" transform="translate', 1)
-    extra = STAMP_CSS + (f'.stamp-g{{color:{T["light"]["stamp"]}}}@media(prefers-color-scheme:dark){{.stamp-g{{color:{T["dark"]["stamp"]}}}}}'
-                         if scheme == 'auto' else f'.stamp-g{{color:{T[scheme]["stamp"]}}}')
+                 text(lines[0], 15, 90, 86, 'mute'), text(lines[1], 15, 90, 108, 'mute'),
+                 stamp(190, 134, 0.5, 5, g[:3], g[3]),
+                 stamp(4, 150, 0.62, -6, m[:3], m[3]),
+                 stamp(326, 154, 0.49, -3, f[:3], f[3])]
+    def colours(c): return f'.stamp-merge{{color:{c["stamp"]}}}.stamp-ink{{color:{c["fg"]};opacity:0.82}}'
+    extra = STAMP_CSS + BLINK + (f'{colours(T["light"])}@media(prefers-color-scheme:dark){{{colours(T["dark"])}}}'
+                                 if scheme == 'auto' else colours(T[scheme]))
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t">'
-            f'<title id="t">karan anand. numerical kernels for stdlib. tools that get people into open source. '
-            f'stamp: merged, 580 pull requests into stdlib, december 2024 to date.</title>'
-            f'{style(scheme, extra)}{svg}</svg>\n')
+            f'<title id="t">karan anand. numerical kernels, open-source doors, calculus on paper. cs and math at ubc. '
+            f'three stamps: merged, 580 pull requests into stdlib, december 2024 to date; gsoc 2025, special functions in js and c; '
+            f'mlh fellowship, openstack, spring 2026.</title>'
+            f'{style(scheme, extra)}{"".join(parts)}</svg>\n')
+
+def frieze(scheme):
+    """sn(z) for m = 0.9 over three periods, phase quantised to eight sectors drawn in two tones
+    on the pixel grid: a checkerboard the function warps around its zeros and poles."""
+    M = 0.9
+    K, Kp = float(mp.ellipk(M)), float(mp.ellipk(1 - M))
+    cols, rows, px = 320, 64, 3
+    sx, sy, y0 = 3 * 4 * K / cols, 2 * Kp / rows, -Kp / 2
+    label = 'sn(z), m = 0.9'
+    lw, lh = width(label, 16) + 20, 30
+    on = []
+    for j in range(rows):
+        for i in range(cols):
+            if i * px < lw and j * px > rows * px - lh: continue          # room for the label
+            try: v = complex(mp.ellipfun('sn', mp.mpc((i + 0.5) * sx, y0 + (j + 0.5) * sy), m=M))
+            except Exception: v = complex(1e9, 0)
+            if int(((cmath.phase(v) + math.pi) / (2 * math.pi)) * 8) % 2 == 0:
+                on.append(f'<rect x="{i * px}" y="{j * px}" width="{px}" height="{px}"/>')
+    W, H = cols * px, rows * px
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t">'
+            f'<title id="t">The Jacobi elliptic function sn of a complex argument, m = 0.9, over three periods: its phase quantised to eight sectors and drawn as a two-tone pixel pattern that warps around the zeros and poles.</title>'
+            f'{style(scheme, ".fz{opacity:0.4}")}<g class="fz mute" shape-rendering="crispEdges">{"".join(on)}</g>'
+            f'{text(label, 16, 10, H - 9, "mute")}</svg>\n')
 
 # Crops in 2x capture pixels (x, y, w, h); each plate's height follows its crop.
 PLATES = {
@@ -100,6 +153,8 @@ PLATES = {
     'gitgoblin':     dict(crop=(0, 0, 1500, 1056),
                           mascot=f'<g transform="translate(1256 -128) scale(12)" shape-rendering="crispEdges">{inner("goblin-peek.svg")}</g>'),
     'longhand':      dict(crop=(0, 0, 1500, 1056), mascot=''),
+    'erly':          dict(crop=(0, 0, 1040, 732), mascot='', pre=True),    # pre-cropped jpeg
+    'whim':          dict(crop=(0, 0, 1500, 1056), mascot='', pre=True),
 }
 
 def plate(scheme, name):
@@ -107,14 +162,17 @@ def plate(scheme, name):
     Light and dark use the site's own light and dark capture; the fallback carries both."""
     cx, cy, cw, ch = PLATES[name]['crop']
     B = 4
-    W = 960 if cw == 2880 else 1508          # half plates share one scale: 1500 px of capture -> 1500 units
+    W = 960 if cw == 2880 else 1508          # half plates share one width so they sit side by side
     k = (W - 2 * B) / cw                     # units per capture pixel
     H = round(ch * k) + 2 * B
+    pre = PLATES[name].get('pre', False)
     def img(variant, cls=''):
-        png = base64.b64encode((SHOTS / f'{name}-{variant}.png').read_bytes()).decode()
-        # the full capture, scaled so the crop fills the frame; the clip hides the rest
-        return (f'<image{cls} href="data:image/png;base64,{png}" x="{B - cx * k:.2f}" y="{B - cy * k:.2f}" '
-                f'width="{2880 * k:.2f}" height="{1440 * k:.2f}" preserveAspectRatio="none"/>')
+        ext, mime = ('jpg', 'jpeg') if pre else ('png', 'png')
+        data = base64.b64encode((SHOTS / f'{name}-{variant}.{ext}').read_bytes()).decode()
+        # the capture, scaled so the crop fills the frame; the clip hides the rest
+        iw, ih = (cw, ch) if pre else (2880, 1440)
+        return (f'<image{cls} href="data:image/{mime};base64,{data}" x="{B - cx * k:.2f}" y="{B - cy * k:.2f}" '
+                f'width="{iw * k:.2f}" height="{ih * k:.2f}" preserveAspectRatio="none"/>')
     images = img('light', ' class="l"') + img('dark', ' class="d"') if scheme == 'auto' else img('dark' if scheme == 'dark' else 'light')
     toggle = '.d{display:none}@media(prefers-color-scheme:dark){.l{display:none}.d{display:inline}}' if scheme == 'auto' else ''
     frame = (f'<g class="frame">'
@@ -132,4 +190,5 @@ for scheme in ('light', 'dark', 'auto'):
     (OUT / f'hero-phone{suffix}.svg').write_text(hero(scheme, phone=True))
     for name in PLATES:
         (OUT / f'plate-{name}{suffix}.svg').write_text(plate(scheme, name))
-print('wrote hero*.svg and plate-*.svg')
+    (OUT / f'frieze{suffix}.svg').write_text(frieze(scheme))
+print('wrote hero*.svg, plate-*.svg and frieze*.svg')
