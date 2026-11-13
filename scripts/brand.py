@@ -3,12 +3,12 @@
   python3 scripts/brand.py        (needs fontTools: pip install fonttools)
 
 Outputs, each as -light, -dark and an OS-following fallback (the hero also as -phone-light/-dark/-phone):
-  assets/hero*.svg            pixel portrait (it blinks), name in Gig Pixel, two lines, three dated stamps
+  assets/hero*.svg            pixel portrait (it blinks), name in Gig Pixel, two lines, two dated stamps
   assets/plate-<project>*.svg a crop of a 2x site capture inside a pixel frame
-  assets/frieze*.svg          sn(z) on the complex plane, phase quantised to two tones on the pixel grid
+  assets/frieze*.svg          sn(z) on the complex plane as a drifting conformal chequerboard
 Sources: GigPixel.ttf and the goblin are copied from the git-into-gsoc and gitgoblin repos;
-portrait.txt is the 14x20 sprite (one character per pixel); shots/ are Playwright captures of
-the live sites at 2880x1440 (PNG8 for flat pages, centre-cropped JPEG for photographic ones).
+portrait.txt is the 14x20 sprite (one character per pixel); shots/ are PNG8 Playwright captures
+of the live sites at 2880x1440, light and dark.
 Needs fontTools and mpmath.
 """
 import base64, cmath, math, re
@@ -90,61 +90,77 @@ def stamp(x, y, scale, angle, lines, cls='stamp'):
     return f'<g class="{cls}" transform="translate({x} {y}) scale({scale}) rotate({angle} {w / 2} {h / 2})">{body}</g>'
 
 STAMPS = [
-    ('merged.', '580 pull requests into stdlib', 'dec 2024 to date', 'stamp-merge'),
-    ('gsoc 2025.', 'special functions in js and c', 'google summer of code, stdlib', 'stamp-ink'),
+    ('merged.', '580 pull requests into stdlib', 'gsoc 2025, dec 2024 to date', 'stamp-merge'),
     ('mlh fellowship.', 'openstack, python-ironicclient', 'spring 2026', 'stamp-ink'),
 ]
 STAMP_CSS = '.cc{fill:currentColor}'
 
 def hero(scheme, phone=False):
     lines = ['numerical kernels, open-source doors,', 'calculus on paper. cs and math at ubc.']
-    m, g, f = STAMPS
+    m, f = STAMPS
     if not phone:
-        W, H = 960, 300
+        W, H = 960, 262
         parts = [portrait(0, 14, 7),                                       # 98 x 140
                  text('karan anand', 84, 130, 102),
                  text(lines[0], 24, 130, 146, 'mute'), text(lines[1], 24, 130, 180, 'mute'),
-                 stamp(724, -2, 0.7, 6, g[:3], g[3]),
-                 stamp(578, 102, 1.0, -7, m[:3], m[3]),
-                 stamp(704, 212, 0.64, -3, f[:3], f[3])]
+                 stamp(640, 22, 1.0, -7, m[:3], m[3]),
+                 stamp(716, 150, 0.66, -14, f[:3], f[3])]
     else:
-        W, H = 480, 246
+        W, H = 480, 236
         parts = [portrait(0, 0, 5),                                        # 70 x 100
                  text('karan anand', 44, 90, 58),
                  text(lines[0], 15, 90, 86, 'mute'), text(lines[1], 15, 90, 108, 'mute'),
-                 stamp(190, 134, 0.5, 5, g[:3], g[3]),
-                 stamp(4, 150, 0.62, -6, m[:3], m[3]),
-                 stamp(326, 154, 0.49, -3, f[:3], f[3])]
+                 stamp(40, 134, 0.66, -6, m[:3], m[3]),
+                 stamp(268, 150, 0.52, -14, f[:3], f[3])]
     def colours(c): return f'.stamp-merge{{color:{c["stamp"]}}}.stamp-ink{{color:{c["fg"]};opacity:0.82}}'
     extra = STAMP_CSS + BLINK + (f'{colours(T["light"])}@media(prefers-color-scheme:dark){{{colours(T["dark"])}}}'
                                  if scheme == 'auto' else colours(T[scheme]))
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t">'
             f'<title id="t">karan anand. numerical kernels, open-source doors, calculus on paper. cs and math at ubc. '
-            f'three stamps: merged, 580 pull requests into stdlib, december 2024 to date; gsoc 2025, special functions in js and c; '
+            f'two stamps: merged, 580 pull requests into stdlib, gsoc 2025, december 2024 to date; '
             f'mlh fellowship, openstack, spring 2026.</title>'
             f'{style(scheme, extra)}{"".join(parts)}</svg>\n')
 
 def frieze(scheme):
-    """sn(z) for m = 0.9 over three periods, phase quantised to eight sectors drawn in two tones
-    on the pixel grid: a checkerboard the function warps around its zeros and poles."""
+    """sn(z) for m = 0.9 over three periods as a conformal chequerboard: cells are squares in
+    log-polar coordinates of the value (phase sectors of pi/4 by modulus bands of e^(pi/4)), so
+    the board warps around zeros and poles. Eight frames rotate the phase by pi/16 each and step
+    every 2 s; after eight steps the board is back where it started. Still under reduced motion."""
     M = 0.9
     K, Kp = float(mp.ellipk(M)), float(mp.ellipk(1 - M))
-    cols, rows, px = 320, 64, 3
+    cols, rows, px, FRAMES = 160, 30, 6, 8
     sx, sy, y0 = 3 * 4 * K / cols, 2 * Kp / rows, -Kp / 2
     label = 'sn(z), m = 0.9'
     lw, lh = width(label, 16) + 20, 30
-    on = []
-    for j in range(rows):
-        for i in range(cols):
-            if i * px < lw and j * px > rows * px - lh: continue          # room for the label
-            try: v = complex(mp.ellipfun('sn', mp.mpc((i + 0.5) * sx, y0 + (j + 0.5) * sy), m=M))
-            except Exception: v = complex(1e9, 0)
-            if int(((cmath.phase(v) + math.pi) / (2 * math.pi)) * 8) % 2 == 0:
-                on.append(f'<rect x="{i * px}" y="{j * px}" width="{px}" height="{px}"/>')
+    vals = [[complex(mp.ellipfun('sn', mp.mpc((i + 0.5) * sx, y0 + (j + 0.5) * sy), m=M)) for i in range(cols)] for j in range(rows)]
+    sector = math.pi / 4
+    def frame(k):
+        rects = []
+        for j in range(rows):
+            run = None
+            for i in range(cols + 1):
+                on = False
+                if i < cols and not (i * px < lw and j * px > rows * px - lh):
+                    v = vals[j][i]
+                    a = abs(v)
+                    if a > 0 and a < 1e9:
+                        p = (cmath.phase(v) + k * sector / 2 + 4 * math.pi) % (2 * math.pi)
+                        on = (int(p // sector) + math.floor(math.log(a) / sector)) % 2 == 0
+                if on and run is None: run = i
+                if not on and run is not None:
+                    rects.append(f'<rect x="{run * px}" y="{j * px}" width="{(i - run) * px}" height="{px}"/>'); run = None
+        return f'<g class="f f{k}">{"".join(rects)}</g>'
     W, H = cols * px, rows * px
+    def keyframes(k):
+        a, b = 100 * k / FRAMES, 100 * (k + 1) / FRAMES
+        shown = f'{a:.3f}%,{b:.3f}%{{opacity:1}}' if k == 0 else f'0%,{a:.3f}%{{opacity:0}}{a + 0.001:.3f}%,{b:.3f}%{{opacity:1}}'
+        return f'.f{k}{{animation:f{k} {2 * FRAMES}s step-end infinite}}@keyframes f{k}{{{shown}{b + 0.001:.3f}%,100%{{opacity:0}}}}'
+    steps = ''.join(keyframes(k) for k in range(FRAMES))
+    css = (f'.f{{opacity:0}}.f0{{opacity:1}}{steps}.fz{{opacity:0.42}}'
+           f'@media(prefers-reduced-motion:reduce){{.f{{animation:none;opacity:0}}.f0{{opacity:1}}}}')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t">'
-            f'<title id="t">The Jacobi elliptic function sn of a complex argument, m = 0.9, over three periods: its phase quantised to eight sectors and drawn as a two-tone pixel pattern that warps around the zeros and poles.</title>'
-            f'{style(scheme, ".fz{opacity:0.4}")}<g class="fz mute" shape-rendering="crispEdges">{"".join(on)}</g>'
+            f'<title id="t">The Jacobi elliptic function sn of a complex argument, m = 0.9, over three periods, drawn as a chequerboard in the value\'s log-polar coordinates so the squares warp around zeros and poles; the board drifts one step every two seconds.</title>'
+            f'{style(scheme, css)}<g class="fz mute" shape-rendering="crispEdges">{"".join(frame(k) for k in range(FRAMES))}</g>'
             f'{text(label, 16, 10, H - 9, "mute")}</svg>\n')
 
 # Crops in 2x capture pixels (x, y, w, h); each plate's height follows its crop.
@@ -153,8 +169,6 @@ PLATES = {
     'gitgoblin':     dict(crop=(0, 0, 1500, 1056),
                           mascot=f'<g transform="translate(1256 -128) scale(12)" shape-rendering="crispEdges">{inner("goblin-peek.svg")}</g>'),
     'longhand':      dict(crop=(0, 0, 1500, 1056), mascot=''),
-    'erly':          dict(crop=(0, 0, 1040, 732), mascot='', pre=True),    # pre-cropped jpeg
-    'whim':          dict(crop=(0, 0, 1500, 1056), mascot='', pre=True),
 }
 
 def plate(scheme, name):
